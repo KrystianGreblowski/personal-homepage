@@ -1,5 +1,7 @@
+import { Container } from "./components/Container";
+
 function App() {
-  return;
+  return <Container>Test</Container>;
 }
 
 export default App;
