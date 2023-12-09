@@ -1,4 +1,11 @@
-import { Wrapper, HeaderTitle, TitleText, TitleIcon } from "./styled";
+import {
+  Wrapper,
+  HeaderTitle,
+  TitleText,
+  TitleIcon,
+  StyledList,
+  ListItem,
+} from "./styled";
 import { ReactComponent as ToolIcon } from "../../images/tool.svg";
 
 const List = () => {
@@ -10,24 +17,24 @@ const List = () => {
           <ToolIcon />
         </TitleIcon>
       </HeaderTitle>
-      <ul>
-        <li>test 1</li>
-        <li>test 2</li>
-        <li>test 3</li>
-        <li>test 4</li>
-        <li>test 5</li>
-        <li>test 6</li>
-        <li>test 7</li>
-        <li>test 8</li>
-        <li>test 9</li>
-        <li>test 10</li>
-        <li>test 11</li>
-        <li>test 12</li>
-        <li>test 13</li>
-        <li>test 14</li>
-        <li>test 15</li>
-        <li>test 16</li>
-      </ul>
+      <StyledList>
+        <ListItem>test 1</ListItem>
+        <ListItem>test 2</ListItem>
+        <ListItem>test 3</ListItem>
+        <ListItem>test 4</ListItem>
+        <ListItem>test 5</ListItem>
+        <ListItem>test 6</ListItem>
+        <ListItem>test 7</ListItem>
+        <ListItem>test 8</ListItem>
+        <ListItem>test 9</ListItem>
+        <ListItem>test 10</ListItem>
+        <ListItem>test 11</ListItem>
+        <ListItem>test 12</ListItem>
+        <ListItem>test 13</ListItem>
+        <ListItem>test 14</ListItem>
+        <ListItem>test 15</ListItem>
+        <ListItem>test 16</ListItem>
+      </StyledList>
     </Wrapper>
   );
 };

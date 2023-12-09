@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
 
 export const HeaderTitle = styled.div`
   display: grid;
-  grid-template-columns: 329px 27px;
+  grid-template-columns: auto 1fr;
   grid-gap: 16px;
 `;
 
@@ -31,4 +31,22 @@ export const TitleIcon = styled.div`
   width: 27px;
   height: 32px;
   margin-top: 6px;
+`;
+
+export const StyledList = styled.ul`
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 8px 115px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0.9px;
+  padding: 32px;
+  padding-bottom: 0;
+  margin: 0;
+`;
+
+export const ListItem = styled.li`
+  color: ${({ theme }) => theme.color.slateGray};
 `;
