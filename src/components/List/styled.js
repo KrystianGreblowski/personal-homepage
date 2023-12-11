@@ -42,8 +42,7 @@ export const StyledList = styled.ul`
   font-weight: 400;
   line-height: 140%;
   letter-spacing: 0.9px;
-  padding: 32px;
-  padding-bottom: 0;
+  padding: 32px 0 0 0;
   margin: 0;
   list-style-type: none;
 
