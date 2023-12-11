@@ -45,6 +45,14 @@ export const StyledList = styled.ul`
   padding: 32px;
   padding-bottom: 0;
   margin: 0;
+  list-style-type: none;
+
+  ::before {
+    content: "•";
+    color: ${({ theme }) => theme.color.scienceBlue};
+    font-size: 1.5em;
+    padding-right: 16px;
+  }
 `;
 
 export const ListItem = styled.li`
