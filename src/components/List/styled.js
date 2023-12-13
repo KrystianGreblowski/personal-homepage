@@ -50,7 +50,7 @@ export const StyledList = styled.ul`
     content: "•";
     color: ${({ theme }) => theme.color.scienceBlue};
     font-size: 1.5em;
-    padding-right: 16px;
+    padding-right: 8px;
   }
 `;
 
