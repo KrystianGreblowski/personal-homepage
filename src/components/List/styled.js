@@ -17,6 +17,7 @@ export const HeaderTitle = styled.div`
 `;
 
 export const TitleText = styled.h2`
+  color: ${({ theme }) => theme.color.mineShaft};
   font-size: 30px;
   font-style: normal;
   font-weight: 900;

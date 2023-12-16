@@ -4,6 +4,6 @@ export const theme = {
     whiteLilac: "#FBFBFE",
     slateGray: "#6E7E91",
     scienceBlue: "#0366D6",
-    black: "#000000",
+    mineShaft: "#252525",
   },
 };
