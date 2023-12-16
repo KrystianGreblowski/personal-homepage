@@ -16,5 +16,6 @@ export const GlobalStyles = createGlobalStyle`
       max-width: 1248px;
       margin: auto;
       padding: 16px;
+      padding-top: 0;
   }
 `;
