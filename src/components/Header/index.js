@@ -9,7 +9,7 @@ const Header = () => {
         <Caption>This is</Caption>
         <Name>Krystian Greblowski</Name>
         <AboutMe>
-          I'm a passionate Frontend Developer in love with React, currently
+          👨🏻💻 I'm a passionate Frontend Developer in love with React, currently
           looking for new job opportunities.
         </AboutMe>
         <button>Hire me</button>
