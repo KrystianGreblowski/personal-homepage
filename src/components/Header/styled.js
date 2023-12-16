@@ -11,3 +11,12 @@ export const HeaderImage = styled.img`
   border-radius: 50%;
   overflow: hidden;
 `;
+
+export const Caption = styled.p`
+  color: ${({ theme }) => theme.color.slateGray};
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  text-transform: uppercase;
+`;
