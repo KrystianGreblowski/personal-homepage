@@ -18,7 +18,7 @@ const Header = () => {
       <HeaderContent>
         <Caption>This is</Caption>
 
-        <Name>Krystian Greblowski</Name>
+        <Name>Krystian Gręblowski</Name>
 
         <AboutMe>
           👨🏻💻 I'm a passionate Frontend Developer in love with React, currently
