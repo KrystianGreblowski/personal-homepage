@@ -20,3 +20,12 @@ export const Caption = styled.p`
   line-height: 130%;
   text-transform: uppercase;
 `;
+
+export const Name = styled.h1`
+  color: ${({ theme }) => theme.color.mineShaft};
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 1.9px;
+`;
