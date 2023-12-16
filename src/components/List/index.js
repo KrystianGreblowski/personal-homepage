@@ -15,6 +15,7 @@ const List = ({ titleText, titleIcon, listItems }) => {
         <TitleText>{titleText}</TitleText>
         <TitleIcon>{titleIcon}</TitleIcon>
       </HeaderTitle>
+
       <StyledList>
         {listItems.map((listItem) => (
           <ListItem key={nanoid()}>{listItem}</ListItem>
