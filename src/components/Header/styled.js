@@ -2,7 +2,10 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: auto auto;
+  grid-gap: 66px;
+  margin-top: 115px;
+  margin-right: 128px;
 `;
 
 export const HeaderImage = styled.img`
@@ -12,6 +15,10 @@ export const HeaderImage = styled.img`
   overflow: hidden;
 `;
 
+export const HeaderContent = styled.div`
+  margin: auto;
+`;
+
 export const Caption = styled.p`
   color: ${({ theme }) => theme.color.slateGray};
   font-size: 12px;
@@ -19,6 +26,8 @@ export const Caption = styled.p`
   font-weight: 700;
   line-height: 130%;
   text-transform: uppercase;
+  margin-top: 68px;
+  margin-bottom: 0;
 `;
 
 export const Name = styled.h1`
@@ -28,6 +37,8 @@ export const Name = styled.h1`
   font-weight: 900;
   line-height: normal;
   letter-spacing: 1.9px;
+  margin-top: 12px;
+  margin-bottom: 35px;
 `;
 
 export const AboutMe = styled.p`
@@ -37,6 +48,8 @@ export const AboutMe = styled.p`
   font-weight: 400;
   line-height: 140%;
   letter-spacing: 1px;
+  margin-top: 0;
+  margin-bottom: 0;
 `;
 
 export const Button = styled.button`
@@ -49,11 +62,12 @@ export const Button = styled.button`
   background-color: ${({ theme }) => theme.color.scienceBlue};
   color: ${({ theme }) => theme.color.white};
   text-align: center;
-  font-size: 20.058px;
-  font-style: normal;
+  font-size: 21px;
   font-weight: 600;
   line-height: normal;
   letter-spacing: 1.003px;
+  margin-top: 32px;
+  margin-bottom: 83px;
 `;
 
 export const StyledButtonIcon = styled.div`

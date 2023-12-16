@@ -2,6 +2,7 @@ import myPhoto from "../../images/header-image-test.png";
 import {
   Wrapper,
   HeaderImage,
+  HeaderContent,
   Caption,
   Name,
   AboutMe,
@@ -14,9 +15,11 @@ const Header = () => {
   return (
     <Wrapper>
       <HeaderImage src={myPhoto} alt="Krystian Gręblowski" />
-      <div>
+      <HeaderContent>
         <Caption>This is</Caption>
+
         <Name>Krystian Greblowski</Name>
+
         <AboutMe>
           👨🏻💻 I'm a passionate Frontend Developer in love with React, currently
           looking for new job opportunities.
@@ -26,9 +29,9 @@ const Header = () => {
           <StyledButtonIcon>
             <ButtonIcon />
           </StyledButtonIcon>
-          Hire me
+          Hire Me
         </Button>
-      </div>
+      </HeaderContent>
     </Wrapper>
   );
 };
