@@ -1,6 +1,7 @@
-import { Container } from "./components/Container";
 import List from "./components/List";
 import Header from "./components/Header";
+import Portfolio from "./components/Portfolio";
+import { Container } from "./components/Container";
 import { skillsetList } from "./data/skillsetList";
 import { learningList } from "./data/learningList";
 import { ReactComponent as ToolIcon } from "./images/tool.svg";
@@ -20,6 +21,7 @@ function App() {
         titleIcon={<RocketIcon />}
         listItems={learningList}
       />
+      <Portfolio />
     </Container>
   );
 }
