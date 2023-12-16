@@ -29,3 +29,12 @@ export const Name = styled.h1`
   line-height: normal;
   letter-spacing: 1.9px;
 `;
+
+export const AboutMe = styled.p`
+  color: ${({ theme }) => theme.color.slateGray};
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 1px;
+`;

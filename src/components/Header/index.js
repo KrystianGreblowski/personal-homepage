@@ -1,5 +1,5 @@
 import myPhoto from "../../images/header-image-test.png";
-import { Wrapper, HeaderImage, Caption, Name } from "./styled";
+import { Wrapper, HeaderImage, Caption, Name, AboutMe } from "./styled";
 
 const Header = () => {
   return (
@@ -8,10 +8,10 @@ const Header = () => {
       <div>
         <Caption>This is</Caption>
         <Name>Krystian Greblowski</Name>
-        <p>
+        <AboutMe>
           I'm a passionate Frontend Developer in love with React, currently
           looking for new job opportunities.
-        </p>
+        </AboutMe>
         <button>Hire me</button>
       </div>
     </Wrapper>
