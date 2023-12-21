@@ -14,6 +14,7 @@ export const HeaderTitle = styled.div`
   display: grid;
   grid-template-columns: auto 1fr;
   grid-gap: 16px;
+  border-bottom: 1px solid rgba(209, 213, 218, 0.3);
 `;
 
 export const TitleText = styled.h2`
@@ -23,7 +24,6 @@ export const TitleText = styled.h2`
   font-weight: 900;
   line-height: normal;
   letter-spacing: 1.5px;
-  border-bottom: 1px solid rgba(209, 213, 218, 0.3);
   padding-bottom: 15px;
   margin: 0;
 `;
