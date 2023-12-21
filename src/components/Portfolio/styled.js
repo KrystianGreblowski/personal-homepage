@@ -35,3 +35,10 @@ export const Description = styled.p`
   margin-top: 8px;
   margin-bottom: 0;
 `;
+
+export const Body = styled.div`
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 32px;
+`;

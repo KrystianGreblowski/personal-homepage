@@ -5,7 +5,9 @@ import {
   StyledGithubIcon,
   Title,
   Description,
+  Body,
 } from "./styled";
+import ProjectTile from "./ProjectTile";
 
 const Portfolio = () => {
   return (
@@ -19,6 +21,13 @@ const Portfolio = () => {
 
         <Description>My recent projects</Description>
       </Header>
+
+      <Body>
+        <ProjectTile />
+        <ProjectTile />
+        <ProjectTile />
+        <ProjectTile />
+      </Body>
     </Wrapper>
   );
 };
