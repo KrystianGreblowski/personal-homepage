@@ -11,16 +11,19 @@ function App() {
   return (
     <Container>
       <Header />
+
       <List
         titleText={"My skillset includes"}
         titleIcon={<ToolIcon />}
         listItems={skillsetList}
       />
+
       <List
         titleText={"What I want to learn next"}
         titleIcon={<RocketIcon />}
         listItems={learningList}
       />
+
       <Portfolio />
     </Container>
   );
