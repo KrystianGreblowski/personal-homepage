@@ -9,32 +9,24 @@ import {
   DirectLink,
 } from "./styled";
 
-const ProjectTile = () => {
+const ProjectTile = ({ title, description, demoLink, codeLink }) => {
   return (
     <Wrapper>
-      <Title>Example title 1</Title>
+      <Title>{title}</Title>
 
-      <Description>
-        Project description, e.g. website where you can search for favourite
-        movies and people. Project description, e.g. website where you can
-        search.
-      </Description>
+      <Description>{description}</Description>
 
       <Links>
         <Demo>
           <LinkTitle>Demo:</LinkTitle>
 
-          <DirectLink href="https://link.demo.com">
-            https://link.demo.com
-          </DirectLink>
+          <DirectLink href={demoLink}>{demoLink}</DirectLink>
         </Demo>
 
         <Code>
           <LinkTitle $Code>Code:</LinkTitle>
 
-          <DirectLink href="https://link.code.com">
-            https://link.code.com
-          </DirectLink>
+          <DirectLink href={codeLink}>{codeLink}</DirectLink>
         </Code>
       </Links>
     </Wrapper>
