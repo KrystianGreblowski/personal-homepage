@@ -1,6 +1,7 @@
 import List from "./components/List";
 import Header from "./components/Header";
 import Portfolio from "./components/Portfolio";
+import Footer from "./components/Footer";
 import { Container } from "./components/Container";
 import { skillsetList } from "./data/skillsetList";
 import { learningList } from "./data/learningList";
@@ -25,6 +26,8 @@ function App() {
       />
 
       <Portfolio />
+
+      <Footer />
     </Container>
   );
 }
