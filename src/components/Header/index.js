@@ -6,10 +6,8 @@ import {
   Caption,
   Name,
   AboutMe,
-  StyledButtonIcon,
-  Button,
 } from "./styled";
-import { ReactComponent as ButtonIcon } from "../../images/message.svg";
+import MailButton from "./MailButton";
 
 const Header = () => {
   return (
@@ -25,12 +23,7 @@ const Header = () => {
           looking for new job opportunities.
         </AboutMe>
 
-        <Button>
-          <StyledButtonIcon>
-            <ButtonIcon />
-          </StyledButtonIcon>
-          Hire Me
-        </Button>
+        <MailButton />
       </HeaderContent>
     </Wrapper>
   );
