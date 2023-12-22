@@ -1,8 +1,8 @@
-import { ReactComponent as GithubIcon } from "../../images/github.svg";
+import { ReactComponent as GitHubIcon } from "../../images/github.svg";
 import {
   Wrapper,
   Header,
-  StyledGithubIcon,
+  StyledGitHubIcon,
   Title,
   Description,
   Body,
@@ -13,9 +13,9 @@ const Portfolio = () => {
   return (
     <Wrapper>
       <Header>
-        <StyledGithubIcon>
-          <GithubIcon />
-        </StyledGithubIcon>
+        <StyledGitHubIcon>
+          <GitHubIcon />
+        </StyledGitHubIcon>
 
         <Title>Portfolio</Title>
 

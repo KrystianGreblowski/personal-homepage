@@ -8,7 +8,7 @@ export const Header = styled.div`
   text-align: center;
 `;
 
-export const StyledGithubIcon = styled.div`
+export const StyledGitHubIcon = styled.div`
   display: inline-block;
   width: 40px;
   height: 40px;
