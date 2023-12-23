@@ -1,13 +1,15 @@
-import { Wrapper, Caption, Mail, Info, Icons } from "./styled";
+import { Wrapper, Caption, Info, Icons } from "./styled";
 import { ReactComponent as GitHubIcon } from "../../images/github-black.svg";
 import { ReactComponent as FacebookIcon } from "../../images/facebook-black.svg";
+import MailButton from "./MailButton";
+import IconButton from "./IconButton";
 
 const Footer = () => {
   return (
     <Wrapper>
       <Caption>Let's talk</Caption>
 
-      <Mail>krystian.greblowski@gmail.com</Mail>
+      <MailButton />
 
       <Info>
         I'm always open to new projects whenever I have the time. If you have a
@@ -16,8 +18,15 @@ const Footer = () => {
       </Info>
 
       <Icons>
-        <GitHubIcon />
-        <FacebookIcon />
+        <IconButton
+          icon={<GitHubIcon />}
+          url="https://github.com/KrystianGreblowski"
+        />
+
+        <IconButton
+          icon={<FacebookIcon />}
+          url="https://www.facebook.com/profile.php?id=100000060031788"
+        />
       </Icons>
     </Wrapper>
   );

@@ -14,16 +14,6 @@ export const Caption = styled.p`
   margin: 0;
 `;
 
-export const Mail = styled.p`
-  color: ${({ theme }) => theme.color.mineShaft};
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: normal;
-  letter-spacing: 1.6px;
-  margin: 24px 0;
-`;
-
 export const Info = styled.p`
   color: ${({ theme }) => theme.color.mineShaft};
   font-size: 18px;
@@ -40,4 +30,16 @@ export const Icons = styled.div`
   grid-template-columns: auto 1fr;
   grid-gap: 24px;
   margin: 56px 0 109px 0;
+`;
+
+export const StyledIcon = styled.div`
+  width: 48px;
+  height: 48px;
+  fill: ${({ theme }) => theme.color.mineShaft};
+  transition: fill 0.1s ease;
+
+  &:hover {
+    cursor: pointer;
+    fill: ${({ theme }) => theme.color.scienceBlue};
+  }
 `;
