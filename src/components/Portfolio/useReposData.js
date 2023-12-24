@@ -5,7 +5,7 @@ export const useReposData = () => {
   const [reposReceived, setReposReceived] = useState([{ name: "" }]);
 
   useEffect(() => {
-    // const accessToken = "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";
+    // const accessToken = "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";
 
     const fetchRepos = async () => {
       try {
