@@ -4,6 +4,19 @@ import axios from "axios";
 export const useReposData = () => {
   const [reposReceived, setReposReceived] = useState([{ name: "" }]);
 
+  const compareDates = (firstDate, secondDate) => {
+    const firstDateReceived = firstDate.dateCreated.getTime();
+    const secondDateReceived = secondDate.dateCreated.getTime();
+
+    return secondDateReceived - firstDateReceived;
+  };
+
+  const sortRepos = (repos) => {
+    const reposSorted = repos.slice().sort(compareDates);
+
+    return reposSorted;
+  };
+
   useEffect(() => {
     // const accessToken = "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";
 
@@ -33,7 +46,8 @@ export const useReposData = () => {
     descriptionRepo: repo.description,
     demoLink: repo.homepage,
     codeLink: repo.html_url,
+    dateCreated: new Date(repo.created_at),
   }));
 
-  return repos;
+  return sortRepos(repos);
 };
