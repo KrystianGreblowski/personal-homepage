@@ -35,7 +35,5 @@ export const useReposData = () => {
     codeLink: repo.html_url,
   }));
 
-  console.log(repos);
-
   return repos;
 };
