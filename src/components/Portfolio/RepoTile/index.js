@@ -10,7 +10,7 @@ import {
 } from "./styled";
 import { demoHandler, codeHandler } from "./handlers";
 
-const ProjectTile = ({ title, description, demoLink, codeLink }) => {
+const RepoTile = ({ title, description, demoLink, codeLink }) => {
   return (
     <TileButton onClick={demoHandler}>
       <Title>{title}</Title>
@@ -38,4 +38,4 @@ const ProjectTile = ({ title, description, demoLink, codeLink }) => {
   );
 };
 
-export default ProjectTile;
+export default RepoTile;

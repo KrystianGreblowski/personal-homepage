@@ -8,7 +8,7 @@ import {
   Description,
   Body,
 } from "./styled";
-import ProjectTile from "./ProjectTile";
+import RepoTile from "./RepoTile";
 import { useReposData } from "./useReposData";
 
 const Portfolio = () => {
@@ -28,7 +28,7 @@ const Portfolio = () => {
 
       <Body>
         {repos.map((repo) => (
-          <ProjectTile
+          <RepoTile
             key={nanoid()}
             title={repo.nameRepo}
             description={repo.descriptionRepo}
