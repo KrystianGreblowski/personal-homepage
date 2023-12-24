@@ -8,12 +8,13 @@ export const TileButton = styled.button`
   border: 6px solid rgba(209, 213, 218, 0.3);
   box-shadow: 0px 16px 58px 0px rgba(9, 10, 51, 0.03),
     0px -2px 50px 0px rgba(9, 10, 51, 0.02);
-  transition: transform 0.25s ease;
+  transition: transform 0.25s ease, border 0.25s ease;
   text-align: left;
 
   &:hover {
     cursor: pointer;
-    transform: scale(1.05);
+    border: 6px solid rgba(3, 102, 214, 0.2);
+    transform: scale(1.04);
   }
 `;
 
