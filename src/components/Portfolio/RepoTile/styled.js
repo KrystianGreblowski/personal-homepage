@@ -9,6 +9,7 @@ export const TileButton = styled.button`
   box-shadow: 0px 16px 58px 0px rgba(9, 10, 51, 0.03),
     0px -2px 50px 0px rgba(9, 10, 51, 0.02);
   transition: transform 0.25s ease;
+  text-align: left;
 
   &:hover {
     cursor: pointer;
@@ -24,7 +25,6 @@ export const Title = styled.h3`
   line-height: normal;
   letter-spacing: 1.2px;
   margin: 0;
-  text-align: left;
 `;
 
 export const Description = styled.p`
@@ -35,7 +35,6 @@ export const Description = styled.p`
   line-height: 140%;
   letter-spacing: 0.9px;
   margin: 24px 0;
-  text-align: left;
 `;
 
 export const Links = styled.div`
