@@ -1,5 +1,5 @@
 import {
-  Wrapper,
+  TileButton,
   Title,
   Description,
   Links,
@@ -8,10 +8,11 @@ import {
   LinkTitle,
   DirectLink,
 } from "./styled";
+import { demoHandler, codeHandler } from "./handlers";
 
 const ProjectTile = ({ title, description, demoLink, codeLink }) => {
   return (
-    <Wrapper>
+    <TileButton onClick={demoHandler}>
       <Title>{title}</Title>
 
       <Description>{description}</Description>
@@ -20,7 +21,7 @@ const ProjectTile = ({ title, description, demoLink, codeLink }) => {
         <Demo>
           <LinkTitle>Demo:</LinkTitle>
 
-          <DirectLink href={demoLink} target="_blank">
+          <DirectLink onClick={() => demoHandler(demoLink)}>
             {demoLink}
           </DirectLink>
         </Demo>
@@ -28,12 +29,12 @@ const ProjectTile = ({ title, description, demoLink, codeLink }) => {
         <Code>
           <LinkTitle>Code:</LinkTitle>
 
-          <DirectLink href={codeLink} target="_blank">
+          <DirectLink onClick={(event) => codeHandler(event, codeLink)}>
             {codeLink}
           </DirectLink>
         </Code>
       </Links>
-    </Wrapper>
+    </TileButton>
   );
 };
 

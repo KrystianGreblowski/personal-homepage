@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
+export const TileButton = styled.button`
   width: 592px;
   background-color: ${({ theme }) => theme.color.white};
   padding: 56px;
@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
   border: 6px solid rgba(209, 213, 218, 0.3);
   box-shadow: 0px 16px 58px 0px rgba(9, 10, 51, 0.03),
     0px -2px 50px 0px rgba(9, 10, 51, 0.02);
-  transition: transform 0.2s ease;
+  transition: transform 0.25s ease;
 
   &:hover {
     cursor: pointer;
@@ -24,6 +24,7 @@ export const Title = styled.h3`
   line-height: normal;
   letter-spacing: 1.2px;
   margin: 0;
+  text-align: left;
 `;
 
 export const Description = styled.p`
@@ -34,6 +35,7 @@ export const Description = styled.p`
   line-height: 140%;
   letter-spacing: 0.9px;
   margin: 24px 0;
+  text-align: left;
 `;
 
 export const Links = styled.div`
