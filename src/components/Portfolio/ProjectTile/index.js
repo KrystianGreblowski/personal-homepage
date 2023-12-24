@@ -20,13 +20,17 @@ const ProjectTile = ({ title, description, demoLink, codeLink }) => {
         <Demo>
           <LinkTitle>Demo:</LinkTitle>
 
-          <DirectLink href={demoLink}>{demoLink}</DirectLink>
+          <DirectLink href={demoLink} target="_blank">
+            {demoLink}
+          </DirectLink>
         </Demo>
 
         <Code>
-          <LinkTitle $Code>Code:</LinkTitle>
+          <LinkTitle>Code:</LinkTitle>
 
-          <DirectLink href={codeLink}>{codeLink}</DirectLink>
+          <DirectLink href={codeLink} target="_blank">
+            {codeLink}
+          </DirectLink>
         </Code>
       </Links>
     </Wrapper>

@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 export const Wrapper = styled.div`
   width: 592px;
@@ -31,7 +31,6 @@ export const Description = styled.p`
 `;
 
 export const Links = styled.div`
-  color: ${({ theme }) => theme.color.slateGray};
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -40,27 +39,28 @@ export const Links = styled.div`
 `;
 
 export const Demo = styled.div`
-  display: flex;
-  justify-content: left;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 8px;
   margin-bottom: 8px;
 `;
 
 export const Code = styled(Demo)`
+  grid-gap: 13px;
   margin-bottom: 0;
 `;
 
 export const LinkTitle = styled.span`
-  margin-right: 8px;
-
-  ${({ $Code }) =>
-    $Code &&
-    css`
-      margin-right: 13px;
-    `}
+  color: ${({ theme }) => theme.color.slateGray};
 `;
 
 export const DirectLink = styled.a`
   color: ${({ theme }) => theme.color.scienceBlue};
   text-decoration: none;
   border-bottom: 1px solid rgb(3, 102, 214, 0.2);
+  transition: border-bottom 0.1s ease;
+
+  &:hover {
+    border-bottom: 1px solid ${({ theme }) => theme.color.scienceBlue};
+  }
 `;
