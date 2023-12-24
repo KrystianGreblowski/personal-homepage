@@ -8,6 +8,12 @@ export const Wrapper = styled.div`
   border: 6px solid rgba(209, 213, 218, 0.3);
   box-shadow: 0px 16px 58px 0px rgba(9, 10, 51, 0.03),
     0px -2px 50px 0px rgba(9, 10, 51, 0.02);
+  transition: transform 0.2s ease;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+  }
 `;
 
 export const Title = styled.h3`
