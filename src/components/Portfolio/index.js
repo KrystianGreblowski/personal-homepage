@@ -6,11 +6,11 @@ import {
   StyledGitHubIcon,
   Title,
   Description,
-  Error,
   Body,
 } from "./styled";
 import RepoTile from "./RepoTile";
 import Loading from "./Loading";
+import Error from "./Error";
 import { useReposData } from "./useReposData";
 
 const Portfolio = () => {
@@ -28,10 +28,11 @@ const Portfolio = () => {
         <Description>My recent projects</Description>
       </Header>
 
-      <Body $loading={reposState === "loading"}>
+      <Body $loading={reposState === "loading"} $error={reposState === "done"}>
         {reposState === "loading" ? (
           <Loading />
-        ) : reposState === "done" ? (
+        ) : // ) : reposState === "done" ? (
+        reposState === "error" ? ( //for tests
           reposSorted.map((repo) => (
             <RepoTile
               key={nanoid()}

@@ -42,11 +42,9 @@ export const Body = styled.div`
   grid-template-columns: 1fr 1fr;
   grid-gap: 32px;
 
-  ${({ $loading }) =>
-    $loading &&
+  ${({ $loading, $error }) =>
+    ($loading || $error) &&
     css`
       grid-template-columns: 1fr;
     `}
 `;
-
-export const Error = styled.div``;
