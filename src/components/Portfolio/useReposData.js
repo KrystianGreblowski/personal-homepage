@@ -26,19 +26,20 @@ export const useReposData = () => {
     return reposSorted;
   };
 
-  // const accessToken = "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";
+  // const accessToken = " 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";
 
   useEffect(() => {
     const fetchRepos = async () => {
       try {
         await new Promise((resolve) => setTimeout(resolve, 1500));
-        //   const headers = {
-        //     Authorization: `Bearer ${accessToken}`,
-        //   };
 
-        //   const response = await axios.get("https://api.github.com/user/repos", {
-        //     headers,
-        //   });
+        // const headers = {
+        //   Authorization: `Bearer ${accessToken}`,
+        // };
+
+        // const response = await axios.get("https://api.github.com/user/repos", {
+        //   headers,
+        // });
 
         const response = await axios.get(`${process.env.PUBLIC_URL}/data.json`);
 
