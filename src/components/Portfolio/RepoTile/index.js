@@ -12,7 +12,7 @@ import { demoHandler, codeHandler } from "./handlers";
 
 const RepoTile = ({ title, description, demoLink, codeLink }) => {
   return (
-    <TileButton onClick={demoHandler}>
+    <TileButton onClick={() => demoHandler(demoLink)}>
       <Title>{title}</Title>
 
       <Description>{description}</Description>
