@@ -1,13 +1,14 @@
-import { Wrapper, Text, Icon } from "./styled";
+import { Wrapper, Text, Animation } from "./styled";
 import LoadingAnimation from "./LoadingAnimation";
 
 const Loading = () => {
   return (
     <Wrapper>
       <Text>Please wait, projects are being loaded...</Text>
-      <Icon>
+
+      <Animation>
         <LoadingAnimation />
-      </Icon>
+      </Animation>
     </Wrapper>
   );
 };

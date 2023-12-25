@@ -18,7 +18,7 @@ export const Text = styled.p`
   margin-bottom: 48px;
 `;
 
-export const Icon = styled.div`
+export const Animation = styled.div`
   width: 160px;
   height: 160px;
 `;
