@@ -2,7 +2,16 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 
 export const useReposData = () => {
-  const [reposReceived, setReposReceived] = useState([{ name: "" }]);
+  const [reposReceived, setReposReceived] = useState([
+    {
+      name: "",
+      description: "",
+      homepage: "",
+      html_url: "",
+      created_at: "2023-05-28T09:46:16Z",
+    },
+  ]);
+  const [reposState, setReposState] = useState("loading");
 
   const compareDates = (firstDate, secondDate) => {
     const firstDateReceived = firstDate.dateCreated.getTime();
@@ -17,11 +26,12 @@ export const useReposData = () => {
     return reposSorted;
   };
 
-  useEffect(() => {
-    // const accessToken = "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";
+  // const accessToken = "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";
 
+  useEffect(() => {
     const fetchRepos = async () => {
       try {
+        await new Promise((resolve) => setTimeout(resolve, 1000));
         //   const headers = {
         //     Authorization: `Bearer ${accessToken}`,
         //   };
@@ -32,14 +42,22 @@ export const useReposData = () => {
 
         const response = await axios.get(`${process.env.PUBLIC_URL}/data.json`);
 
+        if (response.status !== 200) {
+          throw new Error(response.statusText);
+        }
+
+        setReposState("done");
         setReposReceived(response.data);
       } catch (error) {
         console.error("Error fetching repositories:", error);
+        setReposState("error");
       }
     };
 
     fetchRepos();
   }, []);
+
+  // console.log(reposReceived);
 
   const repos = reposReceived.map((repo) => ({
     nameRepo: repo.name,
@@ -49,5 +67,7 @@ export const useReposData = () => {
     dateCreated: new Date(repo.created_at),
   }));
 
-  return sortRepos(repos);
+  const reposSorted = sortRepos(repos);
+
+  return { reposSorted, reposState };
 };

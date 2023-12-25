@@ -6,13 +6,15 @@ import {
   StyledGitHubIcon,
   Title,
   Description,
+  Error,
   Body,
 } from "./styled";
 import RepoTile from "./RepoTile";
+import Loading from "./Loading";
 import { useReposData } from "./useReposData";
 
 const Portfolio = () => {
-  const repos = useReposData([]);
+  const { reposSorted, reposState } = useReposData();
 
   return (
     <Wrapper>
@@ -26,16 +28,22 @@ const Portfolio = () => {
         <Description>My recent projects</Description>
       </Header>
 
-      <Body>
-        {repos.map((repo) => (
-          <RepoTile
-            key={nanoid()}
-            title={repo.nameRepo}
-            description={repo.descriptionRepo}
-            demoLink={repo.demoLink}
-            codeLink={repo.codeLink}
-          />
-        ))}
+      <Body $loading={reposState === "loading"}>
+        {reposState === "loading" ? (
+          <Loading />
+        ) : reposState === "done" ? (
+          reposSorted.map((repo) => (
+            <RepoTile
+              key={nanoid()}
+              title={repo.nameRepo}
+              description={repo.descriptionRepo}
+              demoLink={repo.demoLink}
+              codeLink={repo.codeLink}
+            />
+          ))
+        ) : (
+          <Error>Error</Error>
+        )}
       </Body>
     </Wrapper>
   );

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Wrapper = styled.div`
   margin-top: 72px;
@@ -41,4 +41,12 @@ export const Body = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 32px;
+
+  ${({ $loading }) =>
+    $loading &&
+    css`
+      grid-template-columns: 1fr;
+    `}
 `;
+
+export const Error = styled.div``;
