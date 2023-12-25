@@ -31,7 +31,7 @@ export const useReposData = () => {
   useEffect(() => {
     const fetchRepos = async () => {
       try {
-        await new Promise((resolve) => setTimeout(resolve, 1000));
+        await new Promise((resolve) => setTimeout(resolve, 1500));
         //   const headers = {
         //     Authorization: `Bearer ${accessToken}`,
         //   };
