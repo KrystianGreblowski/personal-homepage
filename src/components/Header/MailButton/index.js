@@ -1,5 +1,5 @@
 import { Button, StyledButtonIcon, ButtonText } from "./styled";
-import { ReactComponent as ButtonIcon } from "../../../images/message.svg";
+import { ReactComponent as ButtonIcon } from "./message.svg";
 
 const MailButton = () => {
   const emailAddress = "krystian.greblowski@gmail.com";

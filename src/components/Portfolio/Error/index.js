@@ -1,5 +1,5 @@
 import { Wrapper, Icon, MainInfo, ExtraInfo } from "./styled";
-import { ReactComponent as ErrorIcon } from "../../../images/error.svg";
+import { ReactComponent as ErrorIcon } from "./error.svg";
 import ErrorButton from "./ErrorButton";
 
 const Error = () => {
