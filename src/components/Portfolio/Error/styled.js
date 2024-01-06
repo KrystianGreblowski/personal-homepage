@@ -14,6 +14,7 @@ export const Icon = styled.div`
 `;
 
 export const MainInfo = styled.h3`
+  color: ${({ theme }) => theme.font.errorMainInfo};
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -23,6 +24,7 @@ export const MainInfo = styled.h3`
 `;
 
 export const ExtraInfo = styled.p`
+  color: ${({ theme }) => theme.font.errorExtraInfo};
   font-size: 20px;
   font-style: normal;
   font-weight: 400;

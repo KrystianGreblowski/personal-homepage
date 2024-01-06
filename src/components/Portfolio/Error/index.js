@@ -1,13 +1,16 @@
+import { useSelector } from "react-redux";
 import { Wrapper, Icon, MainInfo, ExtraInfo } from "./styled";
 import { ReactComponent as ErrorIcon } from "./error.svg";
+import { ReactComponent as ErrorIconDM } from "./errorDM.svg";
 import ErrorButton from "./ErrorButton";
+import { isDarkTheme } from "../../../ThemeSwitch/themeSlice";
 
 const Error = () => {
+  const darkTheme = useSelector(isDarkTheme);
+
   return (
     <Wrapper>
-      <Icon>
-        <ErrorIcon />
-      </Icon>
+      <Icon>{darkTheme ? <ErrorIconDM /> : <ErrorIcon />}</Icon>
 
       <MainInfo>Ooops! Something went wrong...</MainInfo>
 

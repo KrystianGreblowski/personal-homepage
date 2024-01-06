@@ -20,7 +20,7 @@ export const HeaderContent = styled.div`
 `;
 
 export const Caption = styled.p`
-  color: ${({ theme }) => theme.color.slateGray};
+  color: ${({ theme }) => theme.font.headerCaption};
   font-size: 12px;
   font-style: normal;
   font-weight: 700;
@@ -31,7 +31,7 @@ export const Caption = styled.p`
 `;
 
 export const Name = styled.h1`
-  color: ${({ theme }) => theme.color.mineShaft};
+  color: ${({ theme }) => theme.font.headerName};
   font-size: 38px;
   font-style: normal;
   font-weight: 900;
@@ -42,7 +42,7 @@ export const Name = styled.h1`
 `;
 
 export const AboutMe = styled.p`
-  color: ${({ theme }) => theme.color.slateGray};
+  color: ${({ theme }) => theme.font.headerAboutMe};
   font-size: 20px;
   font-style: normal;
   font-weight: 400;

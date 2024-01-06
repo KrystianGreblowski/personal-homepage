@@ -10,12 +10,13 @@ export const Header = styled.div`
 
 export const StyledGitHubIcon = styled.div`
   display: inline-block;
+  fill: ${({ theme }) => theme.fill.portfolioIcon};
   width: 40px;
   height: 40px;
 `;
 
 export const Title = styled.h2`
-  color: ${({ theme }) => theme.color.mineShaft};
+  color: ${({ theme }) => theme.font.portfolioTitle};
   font-size: 30px;
   font-style: normal;
   font-weight: 900;
@@ -26,7 +27,7 @@ export const Title = styled.h2`
 `;
 
 export const Description = styled.p`
-  color: ${({ theme }) => theme.color.mineShaft};
+  color: ${({ theme }) => theme.font.portfolioDescription};
   font-size: 20px;
   font-style: normal;
   font-weight: 400;

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const TileButton = styled.button`
   width: 592px;
-  background-color: ${({ theme }) => theme.color.white};
+  background-color: ${({ theme }) => theme.background.repoTile};
   padding: 56px;
   border-radius: 4px;
   border: 6px solid rgba(209, 213, 218, 0.3);
@@ -13,13 +13,13 @@ export const TileButton = styled.button`
 
   &:hover {
     cursor: pointer;
-    border: 6px solid rgba(3, 102, 214, 0.2);
+    border: 6px solid ${({ theme }) => theme.border.repoTile};
     transform: scale(1.04);
   }
 `;
 
 export const Title = styled.h3`
-  color: ${({ theme }) => theme.color.scienceBlue};
+  color: ${({ theme }) => theme.font.repoTitle};
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -29,7 +29,7 @@ export const Title = styled.h3`
 `;
 
 export const Description = styled.p`
-  color: ${({ theme }) => theme.color.slateGray};
+  color: ${({ theme }) => theme.font.repoDescription};
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -59,16 +59,16 @@ export const Code = styled(Demo)`
 `;
 
 export const LinkTitle = styled.span`
-  color: ${({ theme }) => theme.color.slateGray};
+  color: ${({ theme }) => theme.font.linkTitle};
 `;
 
 export const DirectLink = styled.a`
-  color: ${({ theme }) => theme.color.scienceBlue};
+  color: ${({ theme }) => theme.font.directLink};
   text-decoration: none;
   border-bottom: 1px solid rgb(3, 102, 214, 0.2);
   transition: border-bottom 0.1s ease;
 
   &:hover {
-    border-bottom: 1px solid ${({ theme }) => theme.color.scienceBlue};
+    border-bottom: 1px solid ${({ theme }) => theme.border.directLink};
   }
 `;

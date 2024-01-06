@@ -7,7 +7,7 @@ export const Button = styled.button`
   padding: 12px 16px;
   border-radius: 4px;
   border: 1px solid rgba(209, 213, 218, 0.3);
-  background-color: ${({ theme }) => theme.color.scienceBlue};
+  background-color: ${({ theme }) => theme.background.mailButton};
   margin-top: 32px;
   margin-bottom: 83px;
   transition: box-shadow 0.1s ease;
@@ -29,7 +29,7 @@ export const StyledButtonIcon = styled.div`
 `;
 
 export const ButtonText = styled.div`
-  color: ${({ theme }) => theme.color.white};
+  color: ${({ theme }) => theme.font.headerButtonText};
   text-align: center;
   font-size: 21px;
   font-weight: 600;

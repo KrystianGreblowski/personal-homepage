@@ -5,7 +5,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Caption = styled.p`
-  color: ${({ theme }) => theme.color.slateGray};
+  color: ${({ theme }) => theme.font.footerCaption};
   font-size: 12px;
   font-style: normal;
   font-weight: 700;
@@ -15,7 +15,7 @@ export const Caption = styled.p`
 `;
 
 export const Info = styled.p`
-  color: ${({ theme }) => theme.color.mineShaft};
+  color: ${({ theme }) => theme.font.footerInfo};
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -30,16 +30,4 @@ export const Icons = styled.div`
   grid-template-columns: auto 1fr;
   grid-gap: 24px;
   margin: 56px 0 109px 0;
-`;
-
-export const StyledIcon = styled.div`
-  width: 48px;
-  height: 48px;
-  fill: ${({ theme }) => theme.color.mineShaft};
-  transition: fill 0.1s ease;
-
-  &:hover {
-    cursor: pointer;
-    fill: ${({ theme }) => theme.color.scienceBlue};
-  }
 `;

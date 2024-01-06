@@ -9,6 +9,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Text = styled.p`
+  color: ${({ theme }) => theme.font.loadingText};
   font-size: 20px;
   font-style: normal;
   font-weight: 400;

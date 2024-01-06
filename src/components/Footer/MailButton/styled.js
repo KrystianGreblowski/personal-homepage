@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const Mail = styled.button`
-  color: ${({ theme }) => theme.color.mineShaft};
-  background-color: ${({ theme }) => theme.color.whiteLilac};
+  color: ${({ theme }) => theme.font.footerMailButton};
+  background-color: ${({ theme }) => theme.background.footerMailButton};
   font-size: 32px;
   font-style: normal;
   font-weight: 900;
@@ -15,6 +15,6 @@ export const Mail = styled.button`
 
   &:hover {
     cursor: pointer;
-    color: ${({ theme }) => theme.color.scienceBlue};
+    color: ${({ theme }) => theme.font.footerMailButtonHover};
   }
 `;

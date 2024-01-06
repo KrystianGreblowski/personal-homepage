@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Button = styled.button`
-  color: ${({ theme }) => theme.color.white};
+  color: ${({ theme }) => theme.font.errorButton};
   background-color: ${({ theme }) => theme.color.scienceBlue};
   padding: 12px 16px;
   border-radius: 4px;
