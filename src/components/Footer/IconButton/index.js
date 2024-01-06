@@ -1,4 +1,4 @@
-import { StyledIcon } from "../styled";
+import { StyledIcon } from "./styled";
 
 const IconButton = ({ icon, url }) => {
   const IconHandler = () => {
