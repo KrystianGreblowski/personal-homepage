@@ -11,7 +11,7 @@ import { learningList } from "./data/learningList";
 import { ReactComponent as ToolIcon } from "./images/tool.svg";
 import { ReactComponent as RocketIcon } from "./images/rocket.svg";
 import ThemeSwitch from "./components/ThemeSwitch";
-import { isDarkTheme } from "./ThemeSwitch/themeSlice";
+import { isDarkTheme } from "./components/ThemeSwitch/themeSlice";
 
 import { lightTheme, darkTheme } from "./theme";
 
