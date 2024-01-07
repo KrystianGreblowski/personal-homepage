@@ -10,8 +10,8 @@ import { skillsetList } from "./data/skillsetList";
 import { learningList } from "./data/learningList";
 import { ReactComponent as ToolIcon } from "./images/tool.svg";
 import { ReactComponent as RocketIcon } from "./images/rocket.svg";
-import ThemeSwitch from "./components/ThemeSwitch";
-import { isDarkTheme } from "./components/ThemeSwitch/themeSlice";
+import ThemeButton from "./components/ThemeButton";
+import { isDarkTheme } from "./themeSlice";
 
 import { lightTheme, darkTheme } from "./theme";
 
@@ -19,30 +19,31 @@ function App() {
   const darkMode = useSelector(isDarkTheme);
 
   return (
-    <ThemeSwitch>
-      <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
-        <GlobalStyles />
-        <Container>
-          <Header />
+    <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
+      <GlobalStyles />
 
-          <List
-            titleText={"My skillset includes"}
-            titleIcon={<ToolIcon />}
-            listItems={skillsetList}
-          />
+      <Container>
+        <ThemeButton />
 
-          <List
-            titleText={"What I want to learn next"}
-            titleIcon={<RocketIcon />}
-            listItems={learningList}
-          />
+        <Header />
 
-          <Portfolio />
+        <List
+          titleText={"My skillset includes"}
+          titleIcon={<ToolIcon />}
+          listItems={skillsetList}
+        />
 
-          <Footer />
-        </Container>
-      </ThemeProvider>
-    </ThemeSwitch>
+        <List
+          titleText={"What I want to learn next"}
+          titleIcon={<RocketIcon />}
+          listItems={learningList}
+        />
+
+        <Portfolio />
+
+        <Footer />
+      </Container>
+    </ThemeProvider>
   );
 }
 
