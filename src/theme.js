@@ -37,6 +37,7 @@ export const lightTheme = {
     footerInfo: color.mineShaft,
     footerMailButton: color.mineShaft,
     footerMailButtonHover: color.scienceBlue,
+    themeButtonText: color.slateGray,
   },
   border: {
     listHeaderTitle: "rgba(209, 213, 218, 0.3)",
@@ -81,6 +82,7 @@ export const darkTheme = {
     footerInfo: color.white,
     footerMailButton: color.white,
     footerMailButtonHover: color.dodgerBlue,
+    themeButtonText: color.white,
   },
   border: {
     listHeaderTitle: "rgba(209, 213, 218, 0.1)",
