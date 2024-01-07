@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Wrapper = styled.div`
   display: grid;
@@ -6,6 +6,12 @@ export const Wrapper = styled.div`
   grid-gap: 12px;
   align-items: center;
   margin-top: 115px;
+
+  ${({ $darkTheme }) =>
+    $darkTheme &&
+    css`
+      grid-gap: 17px;
+    `}
 `;
 
 export const Text = styled.p`

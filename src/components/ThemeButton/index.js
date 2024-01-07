@@ -16,7 +16,7 @@ const ThemeButton = () => {
   };
 
   return (
-    <Wrapper>
+    <Wrapper $darkTheme={darkTheme}>
       <Text>{darkTheme ? "Dark mode on" : "Dark mode off"}</Text>
       <Button onClick={toggleThemeHandler}>
         <ToggleAnimation isClicked={isClicked} />
