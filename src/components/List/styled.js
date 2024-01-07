@@ -24,7 +24,7 @@ export const TitleText = styled.h2`
   font-weight: 900;
   line-height: normal;
   letter-spacing: 1.5px;
-  padding-bottom: 15px;
+  padding-bottom: 18px;
   margin: 0;
 `;
 
