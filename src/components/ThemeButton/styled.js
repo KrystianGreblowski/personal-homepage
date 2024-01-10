@@ -31,4 +31,8 @@ export const Button = styled.button`
   width: 48px;
   height: 26px;
   padding: 0;
+
+  &:hover {
+    cursor: pointer;
+  }
 `;
