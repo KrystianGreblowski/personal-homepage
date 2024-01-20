@@ -13,6 +13,7 @@ export const lightTheme = {
     mailButton: color.scienceBlue,
     listWrapper: color.white,
     repoTile: color.white,
+    errorButton: color.scienceBlue,
     footerMailButton: color.whiteLilac,
   },
   font: {
@@ -30,10 +31,10 @@ export const lightTheme = {
     linkTitle: color.slateGray,
     directLink: color.scienceBlue,
     loadingText: color.mineShaft,
-    errorButton: color.scienceBlue,
+    errorButton: color.white,
     errorMainInfo: color.mineShaft,
     errorExtraInfo: color.mineShaft,
-    footerCaption: color.mineShaft,
+    footerCaption: color.slateGray,
     footerInfo: color.mineShaft,
     footerMailButton: color.mineShaft,
     footerMailButtonHover: color.scienceBlue,
@@ -50,6 +51,9 @@ export const lightTheme = {
     footerIconHover: color.scienceBlue,
     footerIconButton: color.mineShaft,
   },
+  breakpoint: {
+    mobileMax: 767,
+  },
 };
 
 export const darkTheme = {
@@ -58,6 +62,7 @@ export const darkTheme = {
     mailButton: color.dodgerBlue,
     listWrapper: "rgba(54, 54, 54, 0.72)",
     repoTile: "rgba(54, 54, 54, 0.72)",
+    errorButton: color.dodgerBlue,
     footerMailButton: color.mineShaft,
   },
   font: {
@@ -75,7 +80,7 @@ export const darkTheme = {
     linkTitle: color.white,
     directLink: color.dodgerBlue,
     loadingText: color.white,
-    errorButton: color.dodgerBlue,
+    errorButton: color.white,
     errorMainInfo: color.white,
     errorExtraInfo: color.white,
     footerCaption: color.white,
@@ -93,5 +98,8 @@ export const darkTheme = {
     portfolioIcon: color.dodgerBlue,
     footerIcon: color.white,
     footerIconHover: color.dodgerBlue,
+  },
+  breakpoint: {
+    mobileMax: 767,
   },
 };
