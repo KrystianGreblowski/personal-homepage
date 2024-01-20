@@ -2,8 +2,8 @@ import { nanoid } from "nanoid";
 import {
   Wrapper,
   HeaderTitle,
-  TitleText,
-  TitleIcon,
+  Title,
+  Icon,
   StyledList,
   ListItem,
 } from "./styled";
@@ -12,8 +12,8 @@ const List = ({ titleText, titleIcon, listItems }) => {
   return (
     <Wrapper>
       <HeaderTitle>
-        <TitleText>{titleText}</TitleText>
-        <TitleIcon>{titleIcon}</TitleIcon>
+        <Title>{titleText}</Title>
+        <Icon>{titleIcon}</Icon>
       </HeaderTitle>
 
       <StyledList>
