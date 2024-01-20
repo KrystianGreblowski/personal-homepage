@@ -2,6 +2,10 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   margin-top: 120px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    margin-top: 48px;
+  }
 `;
 
 export const Caption = styled.p`
@@ -23,11 +27,22 @@ export const Info = styled.p`
   letter-spacing: 0.9px;
   max-width: 670px;
   margin: 0;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    font-size: 14px;
+    line-height: normal;
+    letter-spacing: 0.7px;
+  }
 `;
 
 export const Icons = styled.div`
   display: grid;
   grid-template-columns: auto 1fr;
   grid-gap: 24px;
-  margin: 56px 0 109px 0;
+  margin: 56px 0 92px 0;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    grid-gap: 16px;
+    margin: 40px 0 16px 0;
+  }
 `;

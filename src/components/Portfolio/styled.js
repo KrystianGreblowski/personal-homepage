@@ -2,6 +2,10 @@ import styled, { css } from "styled-components";
 
 export const Wrapper = styled.div`
   margin-top: 72px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    margin-top: 48px;
+  }
 `;
 
 export const Header = styled.div`
@@ -13,6 +17,11 @@ export const StyledGitHubIcon = styled.div`
   fill: ${({ theme }) => theme.fill.portfolioIcon};
   width: 40px;
   height: 40px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    width: 32px;
+    height: 32px;
+  }
 `;
 
 export const Title = styled.h2`
@@ -24,6 +33,11 @@ export const Title = styled.h2`
   letter-spacing: 1.5px;
   margin-top: 12px;
   margin-bottom: 0;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    font-size: 18px;
+    letter-spacing: 0.9px;
+  }
 `;
 
 export const Description = styled.p`
@@ -35,6 +49,12 @@ export const Description = styled.p`
   letter-spacing: 1px;
   margin-top: 8px;
   margin-bottom: 0;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    margin-top: 16px;
+    font-size: 17px;
+    letter-spacing: 0.85px;
+  }
 `;
 
 export const Body = styled.div`
@@ -42,6 +62,11 @@ export const Body = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 32px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    grid-template-columns: 1fr;
+    grid-gap: 16px;
+  }
 
   ${({ $loading, $error }) =>
     ($loading || $error) &&

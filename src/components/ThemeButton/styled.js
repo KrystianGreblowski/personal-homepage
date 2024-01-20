@@ -12,6 +12,12 @@ export const Wrapper = styled.div`
     css`
       grid-gap: 17px;
     `}
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    grid-template-columns: 1fr;
+    justify-items: right;
+    margin-top: 32px;
+  }
 `;
 
 export const Text = styled.p`
@@ -23,6 +29,14 @@ export const Text = styled.p`
   text-transform: uppercase;
   margin: 0;
   justify-self: right;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    ${({ $mobile }) =>
+      $mobile &&
+      css`
+        display: none;
+      `}
+  }
 `;
 
 export const Button = styled.button`

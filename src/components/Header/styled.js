@@ -6,6 +6,14 @@ export const Wrapper = styled.div`
   grid-gap: 66px;
   margin-top: -26px;
   margin-right: 128px;
+  margin-bottom: -12px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    grid-template-columns: auto;
+    grid-gap: 12px;
+    margin-right: 0;
+    margin-bottom: -2px;
+  }
 `;
 
 export const HeaderImage = styled.img`
@@ -13,6 +21,11 @@ export const HeaderImage = styled.img`
   height: 398px;
   border-radius: 50%;
   overflow: hidden;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    width: 132px;
+    height: 132px;
+  }
 `;
 
 export const HeaderContent = styled.div`
@@ -28,6 +41,10 @@ export const Caption = styled.p`
   text-transform: uppercase;
   margin-top: 68px;
   margin-bottom: 0;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    margin-top: 0;
+  }
 `;
 
 export const Name = styled.h1`
@@ -39,6 +56,13 @@ export const Name = styled.h1`
   letter-spacing: 1.9px;
   margin-top: 12px;
   margin-bottom: 35px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    font-size: 22px;
+    letter-spacing: 1.1px;
+    margin-top: 8px;
+    margin-bottom: 12px;
+  }
 `;
 
 export const AboutMe = styled.p`
@@ -50,4 +74,9 @@ export const AboutMe = styled.p`
   letter-spacing: 1px;
   margin-top: 0;
   margin-bottom: 0;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    font-size: 17px;
+    letter-spacing: 0.85px;
+  }
 `;

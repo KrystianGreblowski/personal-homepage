@@ -12,6 +12,12 @@ export const Button = styled.button`
   margin-bottom: 83px;
   transition: box-shadow 0.1s ease;
 
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    margin-top: 24px;
+    margin-bottom: 0;
+    grid-gap: 12px;
+  }
+
   &:hover {
     cursor: pointer;
     box-shadow: -2px -2px 0px 0px #8cc2ff, 2px 2px 0px 0px #8cc2ff,
@@ -26,6 +32,11 @@ export const Button = styled.button`
 export const StyledButtonIcon = styled.div`
   width: 25px;
   height: 25px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    width: 20px;
+    height: 20px;
+  }
 `;
 
 export const ButtonText = styled.div`
@@ -35,4 +46,9 @@ export const ButtonText = styled.div`
   font-weight: 600;
   line-height: normal;
   letter-spacing: 1.003px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    font-size: 18px;
+    letter-spacing: 0.9px;
+  }
 `;

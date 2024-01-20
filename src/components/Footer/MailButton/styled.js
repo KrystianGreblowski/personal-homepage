@@ -13,6 +13,12 @@ export const Mail = styled.button`
   padding: 0;
   transition: color 0.1s ease;
 
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    font-size: 18px;
+    letter-spacing: 0.9px;
+    margin: 12px 0;
+  }
+
   &:hover {
     cursor: pointer;
     color: ${({ theme }) => theme.font.footerMailButtonHover};

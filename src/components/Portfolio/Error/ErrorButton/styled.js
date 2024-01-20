@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Button = styled.button`
   color: ${({ theme }) => theme.font.errorButton};
-  background-color: ${({ theme }) => theme.color.scienceBlue};
+  background-color: ${({ theme }) => theme.background.errorButton};
   padding: 12px 16px;
   border-radius: 4px;
   border: 1px solid var(--semi-grey, rgba(209, 213, 218, 0.1));
@@ -13,6 +13,14 @@ export const Button = styled.button`
   line-height: normal;
   letter-spacing: 1.003px;
   margin-top: 32px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+      font-size: 18px;
+      letter-spacing: 0.9px;
+    }
+    margin-top: 24px;
+  }
 
   &:hover {
     cursor: pointer;

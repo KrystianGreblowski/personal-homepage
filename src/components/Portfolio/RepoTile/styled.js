@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const TileButton = styled.button`
-  width: 592px;
+  max-width: 592px;
   background-color: ${({ theme }) => theme.background.repoTile};
   padding: 56px;
   border-radius: 4px;
@@ -10,6 +10,10 @@ export const TileButton = styled.button`
     0px -2px 50px 0px rgba(9, 10, 51, 0.02);
   transition: transform 0.25s ease, border 0.25s ease;
   text-align: left;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    padding: 24px;
+  }
 
   &:hover {
     cursor: pointer;
@@ -26,6 +30,11 @@ export const Title = styled.h3`
   line-height: normal;
   letter-spacing: 1.2px;
   margin: 0;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    font-size: 16px;
+    letter-spacing: 0.8px;
+  }
 `;
 
 export const Description = styled.p`
@@ -36,6 +45,13 @@ export const Description = styled.p`
   line-height: 140%;
   letter-spacing: 0.9px;
   margin: 24px 0;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    font-size: 14px;
+    line-height: normal;
+    letter-spacing: 0.7px;
+    margin: 16px 0;
+  }
 `;
 
 export const Links = styled.div`
@@ -44,6 +60,12 @@ export const Links = styled.div`
   font-weight: 400;
   line-height: 140%;
   letter-spacing: 0.9px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    font-size: 14px;
+    line-height: normal;
+    letter-spacing: 0.7px;
+  }
 `;
 
 export const Demo = styled.div`

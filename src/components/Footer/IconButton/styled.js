@@ -9,6 +9,11 @@ export const StyledIcon = styled.button`
   padding: 0;
   transition: fill 0.1s ease;
 
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    width: 32px;
+    height: 32px;
+  }
+
   &:hover {
     cursor: pointer;
     fill: ${({ theme }) => theme.fill.footerIconHover};
