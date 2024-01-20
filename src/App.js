@@ -5,7 +5,6 @@ import Header from "./components/Header";
 import Portfolio from "./components/Portfolio";
 import Footer from "./components/Footer";
 import { GlobalStyles } from "./globalStyles";
-import { Container } from "./components/Container";
 import { skillsetList } from "./data/skillsetList";
 import { learningList } from "./data/learningList";
 import { ReactComponent as ToolIcon } from "./images/tool.svg";
@@ -22,27 +21,25 @@ function App() {
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
       <GlobalStyles />
 
-      <Container>
-        <ThemeButton />
+      <ThemeButton />
 
-        <Header />
+      <Header />
 
-        <List
-          titleText={"My skillset includes"}
-          titleIcon={<ToolIcon />}
-          listItems={skillsetList}
-        />
+      <List
+        titleText={"My skillset includes"}
+        titleIcon={<ToolIcon />}
+        listItems={skillsetList}
+      />
 
-        <List
-          titleText={"What I want to learn next"}
-          titleIcon={<RocketIcon />}
-          listItems={learningList}
-        />
+      <List
+        titleText={"What I want to learn next"}
+        titleIcon={<RocketIcon />}
+        listItems={learningList}
+      />
 
-        <Portfolio />
+      <Portfolio />
 
-        <Footer />
-      </Container>
+      <Footer />
     </ThemeProvider>
   );
 }
