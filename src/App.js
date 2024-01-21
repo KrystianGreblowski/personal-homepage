@@ -1,7 +1,8 @@
 import { ThemeProvider } from "styled-components";
 import { useSelector } from "react-redux";
-import List from "./components/List";
+import ThemeButton from "./components/ThemeButton";
 import Header from "./components/Header";
+import List from "./components/List";
 import Portfolio from "./components/Portfolio";
 import Footer from "./components/Footer";
 import { GlobalStyles } from "./globalStyles";
@@ -9,9 +10,7 @@ import { skillsetList } from "./data/skillsetList";
 import { learningList } from "./data/learningList";
 import { ReactComponent as ToolIcon } from "./images/tool.svg";
 import { ReactComponent as RocketIcon } from "./images/rocket.svg";
-import ThemeButton from "./components/ThemeButton";
 import { isDarkTheme } from "./themeSlice";
-
 import { lightTheme, darkTheme } from "./theme";
 
 function App() {
