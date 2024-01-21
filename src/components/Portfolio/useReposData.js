@@ -58,8 +58,6 @@ export const useReposData = () => {
     fetchRepos();
   }, []);
 
-  // console.log(reposReceived);
-
   const repos = reposReceived.map((repo) => ({
     nameRepo: repo.name,
     descriptionRepo: repo.description,
