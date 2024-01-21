@@ -12,9 +12,9 @@ const Footer = () => {
       <MailButton />
 
       <Info>
-        I'm always open to new projects whenever I have the time. If you have a
-        website, dashboard or mobile app in mind and need some help to make your
-        ideas come to life, feel free to contact me
+        I am always open to new projects and I am constantly improving my
+        skills. If you have an idea for a website and would like to realise it,
+        please feel free to contact me 🤞
       </Info>
 
       <Icons>
