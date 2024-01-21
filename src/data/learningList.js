@@ -1,1 +1,8 @@
-export const learningList = ["Test 1", "Test 2", "Test 3", "Test 4"];
+export const learningList = [
+  "TypeScript",
+  "Cypress",
+  "React Context",
+  "Node.js",
+  "JS classes",
+  "Unit testing",
+];
