@@ -42,7 +42,7 @@ const Portfolio = () => {
             />
           ))
         ) : (
-          <Error>Error</Error>
+          <Error />
         )}
       </Body>
     </Wrapper>
