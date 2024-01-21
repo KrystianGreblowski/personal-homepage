@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 export const Wrapper = styled.div`
   display: grid;
@@ -6,12 +6,6 @@ export const Wrapper = styled.div`
   grid-gap: 12px;
   align-items: center;
   margin-top: 115px;
-
-  ${({ $darkTheme }) =>
-    $darkTheme &&
-    css`
-      grid-gap: 17px;
-    `}
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
     grid-template-columns: 1fr;
@@ -31,11 +25,7 @@ export const Text = styled.p`
   justify-self: right;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-    ${({ $mobile }) =>
-      $mobile &&
-      css`
-        display: none;
-      `}
+    display: none;
   }
 `;
 

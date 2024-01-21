@@ -13,8 +13,8 @@ const ThemeButton = () => {
   };
 
   return (
-    <Wrapper $darkTheme={darkTheme}>
-      <Text $mobile>{darkTheme ? "Dark mode on" : "Dark mode off"}</Text>
+    <Wrapper>
+      <Text>{darkTheme ? "Dark mode on" : "Dark mode off"}</Text>
       <Button onClick={toggleThemeHandler}>
         <ToggleAnimation />
       </Button>
