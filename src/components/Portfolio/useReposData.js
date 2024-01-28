@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { sortRepos } from "../../sortRepos";
 
 export const useReposData = () => {
   const [reposReceived, setReposReceived] = useState([
@@ -13,35 +14,14 @@ export const useReposData = () => {
   ]);
   const [reposState, setReposState] = useState("loading");
 
-  const compareDates = (firstDate, secondDate) => {
-    const firstDateReceived = firstDate.dateCreated.getTime();
-    const secondDateReceived = secondDate.dateCreated.getTime();
-
-    return secondDateReceived - firstDateReceived;
-  };
-
-  const sortRepos = (repos) => {
-    const reposSorted = repos.slice().sort(compareDates);
-
-    return reposSorted;
-  };
-
-  // const accessToken = " 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";
-
   useEffect(() => {
     const fetchRepos = async () => {
       try {
         await new Promise((resolve) => setTimeout(resolve, 1500));
 
-        // const headers = {
-        //   Authorization: `Bearer ${accessToken}`,
-        // };
-
-        // const response = await axios.get("https://api.github.com/user/repos", {
-        //   headers,
-        // });
-
-        const response = await axios.get(`${process.env.PUBLIC_URL}/data.json`);
+        const response = await axios.get(
+          "https://api.github.com/users/KrystianGreblowski/repos"
+        );
 
         if (response.status !== 200) {
           throw new Error(response.statusText);
@@ -50,7 +30,6 @@ export const useReposData = () => {
         setReposState("done");
         setReposReceived(response.data);
       } catch (error) {
-        console.error("Error fetching repositories:", error);
         setReposState("error");
       }
     };
