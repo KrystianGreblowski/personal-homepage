@@ -1,9 +1,9 @@
 import { useSelector } from "react-redux";
 import { Wrapper, Icon, MainInfo, ExtraInfo } from "./styled";
-import { ReactComponent as ErrorIcon } from "./error.svg";
-import { ReactComponent as ErrorIconDM } from "./errorDM.svg";
+import { ReactComponent as ErrorIcon } from "../../../images/error.svg";
+import { ReactComponent as ErrorIconDM } from "../../../images/errorDM.svg";
 import ErrorButton from "./ErrorButton";
-import { isDarkTheme } from "../../../themeSlice";
+import { isDarkTheme } from "../../../theme/themeSlice";
 
 const Error = () => {
   const darkTheme = useSelector(isDarkTheme);

@@ -1,4 +1,4 @@
-import myPhoto from "./header-image-test.png";
+import myPhoto from "../../images/header-image-test.png";
 import {
   Wrapper,
   HeaderImage,

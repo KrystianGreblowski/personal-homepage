@@ -1,5 +1,5 @@
 import { Button, StyledButtonIcon, ButtonText } from "./styled";
-import { ReactComponent as ButtonIcon } from "./message.svg";
+import { ReactComponent as ButtonIcon } from "../../../images/message.svg";
 
 const MailButton = () => {
   const emailAddress = "krystian.greblowski@gmail.com";
@@ -13,6 +13,7 @@ const MailButton = () => {
       <StyledButtonIcon>
         <ButtonIcon />
       </StyledButtonIcon>
+
       <ButtonText>Hire Me</ButtonText>
     </Button>
   );

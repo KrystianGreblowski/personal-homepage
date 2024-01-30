@@ -1,6 +1,9 @@
 import { useSelector } from "react-redux";
 import { animated, useSpring } from "react-spring";
-import { isDarkTheme, themeButtonPositionState } from "../../../themeSlice";
+import {
+  isDarkTheme,
+  themeButtonPositionState,
+} from "../../../theme/themeSlice";
 
 const ToggleAnimation = () => {
   const darkTheme = useSelector(isDarkTheme);

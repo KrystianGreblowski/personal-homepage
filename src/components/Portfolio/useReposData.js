@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import { sortRepos } from "../../sortRepos";
+import { sortRepos } from "./sortRepos";
 
 export const useReposData = () => {
   const [reposReceived, setReposReceived] = useState([

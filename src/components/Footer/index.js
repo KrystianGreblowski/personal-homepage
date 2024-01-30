@@ -1,6 +1,6 @@
 import { Wrapper, Caption, Info, Icons } from "./styled";
-import { ReactComponent as GitHubIcon } from "./github-black.svg";
-import { ReactComponent as FacebookIcon } from "./facebook-black.svg";
+import { ReactComponent as GitHubIcon } from "../../images/github-black.svg";
+import { ReactComponent as FacebookIcon } from "../../images/facebook-black.svg";
 import MailButton from "./MailButton";
 import IconButton from "./IconButton";
 

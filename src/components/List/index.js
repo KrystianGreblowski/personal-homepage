@@ -13,6 +13,7 @@ const List = ({ titleText, titleIcon, listItems }) => {
     <Wrapper>
       <HeaderTitle>
         <Title>{titleText}</Title>
+
         <Icon>{titleIcon}</Icon>
       </HeaderTitle>
 

@@ -1,5 +1,5 @@
 import { nanoid } from "nanoid";
-import { ReactComponent as GitHubIcon } from "./github.svg";
+import { ReactComponent as GitHubIcon } from "../../images/github.svg";
 import {
   Wrapper,
   Header,
