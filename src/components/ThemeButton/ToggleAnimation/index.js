@@ -1,21 +1,12 @@
 import { useSelector } from "react-redux";
 import { animated, useSpring } from "react-spring";
-import {
-  isDarkTheme,
-  themeButtonPositionState,
-} from "../../../theme/themeSlice";
+import { isDarkTheme } from "../../../theme/themeSlice";
 
 const ToggleAnimation = () => {
   const darkTheme = useSelector(isDarkTheme);
 
-  const [themeButtonStartPosition, themeButtonEndPosition] = useSelector(
-    themeButtonPositionState
-  );
-
   const springs = useSpring({
-    reset: true,
-    from: { x: themeButtonStartPosition },
-    to: { x: themeButtonEndPosition },
+    transform: `translateX(${darkTheme ? 0 : 23}px)`,
     config: {
       duration: 250,
     },
@@ -39,12 +30,7 @@ const ToggleAnimation = () => {
         />
       </g>
 
-      <animated.g
-        id="toggle_button"
-        style={{
-          ...springs,
-        }}
-      >
+      <animated.g id="toggle_button" style={springs}>
         <g id="toggle" transform="translate(2.5, 3)">
           <path
             id="Vector"
