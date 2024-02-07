@@ -9,7 +9,7 @@ export const useReposData = () => {
       description: "",
       homepage: "",
       html_url: "",
-      created_at: "2023-05-28T09:46:16Z",
+      created_at: "",
     },
   ]);
   const [reposState, setReposState] = useState("loading");
