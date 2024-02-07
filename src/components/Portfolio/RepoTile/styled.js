@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const TileButton = styled.button`
   max-width: 592px;
-  background-color: ${({ theme }) => theme.background.repoTile};
+  background-color: ${({ theme }) => theme.colors.background.repoTile};
   padding: 56px;
   border-radius: 4px;
   border: 6px solid rgba(209, 213, 218, 0.3);
@@ -11,19 +11,19 @@ export const TileButton = styled.button`
   transition: transform 0.25s ease, border 0.25s ease;
   text-align: left;
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
     padding: 24px;
   }
 
   &:hover {
     cursor: pointer;
-    border: 6px solid ${({ theme }) => theme.border.repoTile};
+    border: 6px solid ${({ theme }) => theme.colors.border.repoTile};
     transform: scale(1.04);
   }
 `;
 
 export const Title = styled.h3`
-  color: ${({ theme }) => theme.font.repoTitle};
+  color: ${({ theme }) => theme.colors.font.repoTitle};
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -31,14 +31,14 @@ export const Title = styled.h3`
   letter-spacing: 1.2px;
   margin: 0;
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
     font-size: 16px;
     letter-spacing: 0.8px;
   }
 `;
 
 export const Description = styled.p`
-  color: ${({ theme }) => theme.font.repoDescription};
+  color: ${({ theme }) => theme.colors.font.repoDescription};
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -46,7 +46,7 @@ export const Description = styled.p`
   letter-spacing: 0.9px;
   margin: 24px 0;
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
     font-size: 14px;
     line-height: normal;
     letter-spacing: 0.7px;
@@ -61,7 +61,7 @@ export const Links = styled.div`
   line-height: 140%;
   letter-spacing: 0.9px;
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
     font-size: 14px;
     line-height: normal;
     letter-spacing: 0.7px;
@@ -81,16 +81,16 @@ export const Code = styled(Demo)`
 `;
 
 export const LinkTitle = styled.span`
-  color: ${({ theme }) => theme.font.linkTitle};
+  color: ${({ theme }) => theme.colors.font.linkTitle};
 `;
 
 export const DirectLink = styled.a`
-  color: ${({ theme }) => theme.font.directLink};
+  color: ${({ theme }) => theme.colors.font.directLink};
   text-decoration: none;
   border-bottom: 1px solid rgb(3, 102, 214, 0.2);
   transition: border-bottom 0.1s ease;
 
   &:hover {
-    border-bottom: 1px solid ${({ theme }) => theme.border.directLink};
+    border-bottom: 1px solid ${({ theme }) => theme.colors.border.directLink};
   }
 `;

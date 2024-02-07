@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const Button = styled.button`
-  color: ${({ theme }) => theme.font.errorButton};
-  background-color: ${({ theme }) => theme.background.errorButton};
+  color: ${({ theme }) => theme.colors.font.errorButton};
+  background-color: ${({ theme }) => theme.colors.background.errorButton};
   padding: 12px 16px;
   border-radius: 4px;
   border: 1px solid var(--semi-grey, rgba(209, 213, 218, 0.1));
@@ -15,11 +15,9 @@ export const Button = styled.button`
   margin-top: 32px;
   transition: box-shadow 0.1s ease;
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-      font-size: 18px;
-      letter-spacing: 0.9px;
-    }
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+    font-size: 18px;
+    letter-spacing: 0.9px;
     margin-top: 24px;
   }
 

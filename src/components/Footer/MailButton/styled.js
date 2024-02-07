@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const Mail = styled.button`
-  color: ${({ theme }) => theme.font.footerMailButton};
-  background-color: ${({ theme }) => theme.background.footerMailButton};
+  color: ${({ theme }) => theme.colors.font.footerMailButton};
+  background-color: ${({ theme }) => theme.colors.background.footerMailButton};
   font-size: 32px;
   font-style: normal;
   font-weight: 900;
@@ -13,7 +13,7 @@ export const Mail = styled.button`
   padding: 0;
   transition: color 0.1s ease;
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
     font-size: 18px;
     letter-spacing: 0.9px;
     margin: 12px 0;
@@ -21,6 +21,6 @@ export const Mail = styled.button`
 
   &:hover {
     cursor: pointer;
-    color: ${({ theme }) => theme.font.footerMailButtonHover};
+    color: ${({ theme }) => theme.colors.font.footerMailButtonHover};
   }
 `;

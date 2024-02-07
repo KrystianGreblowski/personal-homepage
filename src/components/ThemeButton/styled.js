@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
   align-items: center;
   margin-top: 115px;
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
     grid-template-columns: 1fr;
     justify-items: right;
     margin-top: 32px;
@@ -15,7 +15,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Text = styled.p`
-  color: ${({ theme }) => theme.font.themeButtonText};
+  color: ${({ theme }) => theme.colors.font.themeButtonText};
   font-size: 12px;
   font-style: normal;
   font-weight: 700;
@@ -24,14 +24,14 @@ export const Text = styled.p`
   margin: 0;
   justify-self: right;
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
     display: none;
   }
 `;
 
 export const Button = styled.button`
   border: none;
-  background: ${({ theme }) => theme.background.body};
+  background: ${({ theme }) => theme.colors.background.body};
   width: 48px;
   height: 26px;
   padding: 0;
