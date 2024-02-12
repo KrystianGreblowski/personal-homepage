@@ -17,14 +17,14 @@ export const Wrapper = styled.div`
 `;
 
 export const HeaderImage = styled.img`
-  width: 398px;
-  height: 398px;
+  width: 384px;
+  height: 384px;
   border-radius: 50%;
   overflow: hidden;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
-    width: 132px;
-    height: 132px;
+    width: 128px;
+    height: 128px;
   }
 `;
 
