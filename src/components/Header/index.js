@@ -1,4 +1,4 @@
-import myPhoto from "../../images/header-image-test.png";
+import headerImage from "../../images/photoOfMe.png";
 import {
   Wrapper,
   HeaderImage,
@@ -12,7 +12,7 @@ import MailButton from "./MailButton";
 const Header = () => {
   return (
     <Wrapper>
-      <HeaderImage src={myPhoto} alt="Krystian Gręblowski" />
+      <HeaderImage src={headerImage} alt="Krystian Gręblowski" />
       <HeaderContent>
         <Caption>This is</Caption>
 
