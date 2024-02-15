@@ -19,8 +19,8 @@ const Header = () => {
         <Name>Krystian Gręblowski</Name>
 
         <AboutMe>
-          👨🏻💻 I am a Frontend Developer who enjoys working with React. I am
-          currently looking for new work opportunities.
+          👨🏻💻 I'm a Frontend Developer who enjoys working with React. I'm
+          currently looking for new job opportunities.
         </AboutMe>
 
         <MailButton />
