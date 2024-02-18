@@ -11,7 +11,7 @@ export const Mail = styled.button`
   margin: 24px 0;
   border: none;
   padding: 0;
-  transition: color 0.1s ease;
+  transition: color 0.3s ease;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
     font-size: 18px;

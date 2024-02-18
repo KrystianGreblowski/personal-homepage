@@ -88,7 +88,7 @@ export const DirectLink = styled.a`
   color: ${({ theme }) => theme.colors.font.directLink};
   text-decoration: none;
   border-bottom: 1px solid rgb(3, 102, 214, 0.2);
-  transition: border-bottom 0.1s ease;
+  transition: border-bottom 0.4s ease;
 
   &:hover {
     border-bottom: 1px solid ${({ theme }) => theme.colors.border.directLink};

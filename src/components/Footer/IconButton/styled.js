@@ -7,7 +7,7 @@ export const StyledIcon = styled.button`
   height: 48px;
   border: none;
   padding: 0;
-  transition: fill 0.1s ease;
+  transition: fill 0.3s ease;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
     width: 32px;

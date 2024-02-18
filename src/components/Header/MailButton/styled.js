@@ -10,7 +10,7 @@ export const Button = styled.button`
   background-color: ${({ theme }) => theme.colors.background.mailButton};
   margin-top: 32px;
   margin-bottom: 83px;
-  transition: box-shadow 0.1s ease;
+  transition: box-shadow 0.3s ease;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
     margin-top: 24px;

@@ -13,7 +13,7 @@ export const Button = styled.button`
   line-height: normal;
   letter-spacing: 1.003px;
   margin-top: 32px;
-  transition: box-shadow 0.1s ease;
+  transition: box-shadow 0.3s ease;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
     font-size: 18px;
