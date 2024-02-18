@@ -16,6 +16,7 @@ export const Caption = styled.p`
   line-height: 130%;
   text-transform: uppercase;
   margin: 0;
+  margin-bottom: 24px;
 `;
 
 export const Info = styled.p`
@@ -27,6 +28,7 @@ export const Info = styled.p`
   letter-spacing: 0.9px;
   max-width: 670px;
   margin: 0;
+  margin-top: 24px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
     font-size: 14px;
