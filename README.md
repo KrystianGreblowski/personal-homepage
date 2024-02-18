@@ -2,7 +2,7 @@
 
 ## Preview
 
-![personal_homepage](readme-preview.png)
+![personal_homepage](readme-preview.gif)
 
 ## Description
 
