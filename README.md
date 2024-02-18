@@ -8,6 +8,8 @@
 
 This is a website about me. You can see the skills I've learnt and projects I've created. You can also contact me if you're interested in hiring me.
 
+This is the website I created as part of a project for the YouCode Frontend Developer course.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Demo
