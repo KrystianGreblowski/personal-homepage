@@ -2,7 +2,7 @@
 
 ## Preview
 
-![personal_homepage](readme-preview.gif)
+![Personal Homepage](%PUBLIC_URL%/readme-preview.gif)
 
 ## Description
 
