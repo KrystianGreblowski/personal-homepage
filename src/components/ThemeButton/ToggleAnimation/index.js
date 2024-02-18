@@ -6,7 +6,7 @@ const ToggleAnimation = () => {
   const darkTheme = useSelector(isDarkTheme);
 
   const springs = useSpring({
-    transform: `translateX(${darkTheme ? 0 : 23}px)`,
+    transform: `translateX(${darkTheme ? 23 : 0}px)`,
     config: {
       duration: 250,
     },
