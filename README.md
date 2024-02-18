@@ -10,7 +10,7 @@ This is a website about me. You can see what skills I've learnt and what project
 
 I created this website as part of a project for the YouCode Frontend Developer course.
 
-This project was started with Create React App.
+This project was bootstrapped with Create React App.
 
 ## Demo
 [Personal Homepage](https://krystiangreblowski.github.io/personal-homepage/)
