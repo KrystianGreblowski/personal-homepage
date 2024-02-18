@@ -2,6 +2,8 @@
 
 ## Preview
 
+![personal_homepage](readme-preview.gif)
+
 ## Description
 
 This is a website about me. You can see the skills I've learnt and projects I've created. You can also contact me if you're interested in hiring me.
