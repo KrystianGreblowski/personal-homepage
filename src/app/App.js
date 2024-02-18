@@ -5,7 +5,7 @@ import Header from "../components/Header";
 import List from "../components/List";
 import Portfolio from "../components/Portfolio";
 import Footer from "../components/Footer";
-import { GlobalStyles } from "./globalStyles";
+import { GlobalStyles } from "./GlobalStyles";
 import { skillsetList } from "../data/data";
 import { learningList } from "../data/data";
 import { ReactComponent as ToolIcon } from "../images/tool.svg";
