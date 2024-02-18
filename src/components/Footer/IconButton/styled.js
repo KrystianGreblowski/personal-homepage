@@ -1,12 +1,9 @@
 import styled from "styled-components";
 
-export const StyledIcon = styled.button`
-  background-color: ${({ theme }) => theme.colors.background.body};
+export const StyledIcon = styled.a`
   fill: ${({ theme }) => theme.colors.fill.footerIcon};
   width: 48px;
   height: 48px;
-  border: none;
-  padding: 0;
   transition: fill 0.3s ease;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {

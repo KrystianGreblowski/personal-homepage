@@ -1,11 +1,11 @@
 import { StyledIcon } from "./styled";
 
 const IconButton = ({ icon, url }) => {
-  const iconHandler = () => {
-    window.open(url, "_blank");
-  };
-
-  return <StyledIcon onClick={iconHandler}>{icon}</StyledIcon>;
+  return (
+    <StyledIcon href={url} target="_blank">
+      {icon}
+    </StyledIcon>
+  );
 };
 
 export default IconButton;

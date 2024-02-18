@@ -4,12 +4,8 @@ import { ReactComponent as ButtonIcon } from "../../../images/message.svg";
 const MailButton = () => {
   const emailAddress = "krystian.greblowski@gmail.com";
 
-  const mailHandler = () => {
-    window.location.href = `mailto:${emailAddress}`;
-  };
-
   return (
-    <Button onClick={mailHandler}>
+    <Button href={`mailto:${emailAddress}`}>
       <StyledButtonIcon>
         <ButtonIcon />
       </StyledButtonIcon>
