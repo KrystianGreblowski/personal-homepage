@@ -10,6 +10,7 @@ export const skillsetList = [
   "Working with API(fetch, axios)",
   "Promises, Async/Await",
   "CSS BEM convention",
+  "CSS Grid",
   "CSS Flexbox",
   "Responsive Web Design",
   "Markdown",
