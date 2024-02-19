@@ -41,7 +41,7 @@ export const Icons = styled.div`
   display: grid;
   grid-template-columns: auto 1fr;
   grid-gap: 24px;
-  margin: 56px 0 92px 0;
+  margin: 56px 0 32px 0;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
     grid-gap: 16px;
