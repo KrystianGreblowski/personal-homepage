@@ -5,12 +5,12 @@ export const Wrapper = styled.div`
   grid-template-columns: 1fr auto;
   grid-gap: 12px;
   align-items: center;
-  margin-top: 115px;
+  margin-top: 32px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
     grid-template-columns: 1fr;
     justify-items: right;
-    margin-top: 32px;
+    margin-top: 16px;
   }
 `;
 
