@@ -8,17 +8,15 @@ export const TileButton = styled.button`
   border: 6px solid rgba(209, 213, 218, 0.3);
   box-shadow: 0px 16px 58px 0px rgba(9, 10, 51, 0.03),
     0px -2px 50px 0px rgba(9, 10, 51, 0.02);
-  transition: transform 0.25s ease, border 0.25s ease;
   text-align: left;
+  transition: border 0.4s ease;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
     padding: 24px;
   }
 
   &:hover {
-    cursor: pointer;
     border: 6px solid ${({ theme }) => theme.colors.border.repoTile};
-    transform: scale(1.04);
   }
 `;
 
@@ -88,9 +86,10 @@ export const DirectLink = styled.a`
   color: ${({ theme }) => theme.colors.font.directLink};
   text-decoration: none;
   border-bottom: 1px solid rgb(3, 102, 214, 0.2);
-  transition: border-bottom 0.4s ease;
+  transition: border-bottom 0.2s ease;
 
   &:hover {
     border-bottom: 1px solid ${({ theme }) => theme.colors.border.directLink};
+    cursor: pointer;
   }
 `;

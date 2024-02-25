@@ -8,11 +8,10 @@ import {
   LinkTitle,
   DirectLink,
 } from "./styled";
-import { demoHandler, codeHandler } from "./handlers";
 
 const RepoTile = ({ title, description, demoLink, codeLink }) => {
   return (
-    <TileButton onClick={() => demoHandler(demoLink)}>
+    <TileButton>
       <Title>{title}</Title>
 
       <Description>{description}</Description>
@@ -21,7 +20,7 @@ const RepoTile = ({ title, description, demoLink, codeLink }) => {
         <Demo>
           <LinkTitle>Demo:</LinkTitle>
 
-          <DirectLink onClick={() => demoHandler(demoLink)}>
+          <DirectLink href={demoLink} target="_blank">
             {demoLink}
           </DirectLink>
         </Demo>
@@ -29,7 +28,7 @@ const RepoTile = ({ title, description, demoLink, codeLink }) => {
         <Code>
           <LinkTitle>Code:</LinkTitle>
 
-          <DirectLink onClick={(event) => codeHandler(event, codeLink)}>
+          <DirectLink href={codeLink} target="_blank">
             {codeLink}
           </DirectLink>
         </Code>
