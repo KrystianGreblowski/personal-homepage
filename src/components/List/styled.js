@@ -33,11 +33,11 @@ export const Title = styled.h2`
   font-weight: 900;
   line-height: normal;
   letter-spacing: 1.5px;
-  padding-bottom: 18px;
   margin: 0;
+  margin-bottom: 18px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
-    padding-bottom: 12px;
+    margin-bottom: 12px;
     font-size: 18px;
     letter-spacing: 0.9px;
   }
@@ -63,12 +63,13 @@ export const StyledList = styled.ul`
   font-weight: 400;
   line-height: 140%;
   letter-spacing: 0.9px;
-  padding: 32px 0 0 0;
+  padding: 0;
   margin: 0;
+  margin-top: 32px;
   list-style-type: none;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
-    padding: 12px 0 0 0;
+    margin-top: 12px;
     grid-template-columns: 1fr;
     font-size: 14px;
     line-height: normal;
@@ -79,7 +80,7 @@ export const StyledList = styled.ul`
     content: "•";
     color: ${({ theme }) => theme.colors.font.listBullet};
     font-size: 1.5em;
-    padding-right: 8px;
+    margin-right: 8px;
   }
 `;
 
