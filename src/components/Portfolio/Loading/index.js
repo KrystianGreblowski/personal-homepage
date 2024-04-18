@@ -1,16 +1,10 @@
-import { Wrapper, Text, Animation } from "./styled";
-import LoadingAnimation from "./LoadingAnimation";
+import { Wrapper, Text, LoadingAnimation } from "./styled";
 
-const Loading = () => {
-  return (
-    <Wrapper>
-      <Text>Please wait, projects are being loaded...</Text>
-
-      <Animation>
-        <LoadingAnimation />
-      </Animation>
-    </Wrapper>
-  );
-};
+const Loading = () => (
+  <Wrapper>
+    <Text>Please wait, projects are being loaded…</Text>
+    <LoadingAnimation />
+  </Wrapper>
+);
 
 export default Loading;

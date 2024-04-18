@@ -15,9 +15,11 @@ export const useReposData = () => {
   const [reposState, setReposState] = useState("loading");
 
   useEffect(() => {
+    const loadingDelay = 1000;
+
     const fetchRepos = async () => {
       try {
-        await new Promise((resolve) => setTimeout(resolve, 1500));
+        await new Promise((resolve) => setTimeout(resolve, loadingDelay));
 
         const response = await axios.get(
           "https://api.github.com/users/KrystianGreblowski/repos"

@@ -1,7 +1,7 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+import { ReactComponent as Spinner } from "./spinner.svg";
 
 export const Wrapper = styled.div`
-  text-align: center;
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
@@ -30,12 +30,22 @@ export const Text = styled.p`
   }
 `;
 
-export const Animation = styled.div`
+const rotate = keyframes`
+  from {
+    transform: rotate(0deg);
+}
+  to {
+    transform: rotate(360deg);
+}
+`;
+
+export const LoadingAnimation = styled(Spinner)`
+  animation: ${rotate} 1s linear infinite;
   width: 160px;
   height: 160px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
-    width: 64px;
-    height: 64px;
+    width: 40px;
+    height: 40px;
   }
 `;
