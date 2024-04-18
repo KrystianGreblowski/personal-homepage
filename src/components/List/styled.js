@@ -57,7 +57,7 @@ export const Icon = styled.div`
 export const StyledList = styled.ul`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 8px 115px;
+  grid-gap: 8px 0;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
