@@ -56,7 +56,7 @@ export const Icon = styled.div`
 
 export const StyledList = styled.ul`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 8px 16px;
   font-size: 18px;
   font-style: normal;
@@ -68,12 +68,20 @@ export const StyledList = styled.ul`
   margin-top: 32px;
   list-style-type: none;
 
+  @media (max-width: ${({ theme }) => theme.breakpoints.extraLarge}px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
     margin-top: 12px;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     font-size: 14px;
     line-height: normal;
     letter-spacing: 0.7px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.small}px) {
+    grid-template-columns: 1fr;
   }
 
   ::before {
