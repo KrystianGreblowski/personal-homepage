@@ -53,9 +53,9 @@ export const HeaderContent = styled.div`
     margin-right: 16px;
   }
 
-  /* @media (max-width: ${({ theme }) => theme.breakpoints.small}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.extraSmall}px) {
     margin-right: 0;
-  } */
+  }
 `;
 
 export const Caption = styled.p`
