@@ -53,7 +53,7 @@ export const lightTheme = {
     },
   },
   breakpoints: {
-    extraLarge: 1280,
+    extraLarge: 1172,
     large: 1024,
     medium: 768,
     small: 640,
@@ -107,7 +107,7 @@ export const darkTheme = {
     },
   },
   breakpoints: {
-    extraLarge: 1280,
+    extraLarge: 1172,
     large: 1024,
     medium: 768,
     small: 640,
