@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
   align-items: center;
   margin-top: 32px;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
     grid-template-columns: 1fr;
     justify-items: right;
     margin-top: 16px;
@@ -24,7 +24,7 @@ export const Text = styled.p`
   margin: 0;
   justify-self: right;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
     display: none;
   }
 `;

@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
   margin-right: 128px;
   margin-bottom: -12px;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
     grid-template-columns: auto;
     grid-gap: 12px;
     margin-right: 0;
@@ -22,7 +22,7 @@ export const HeaderImage = styled.img`
   border-radius: 50%;
   overflow: hidden;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
     width: 128px;
     height: 128px;
   }
@@ -42,7 +42,7 @@ export const Caption = styled.p`
   margin-top: 68px;
   margin-bottom: 0;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
     margin-top: 0;
   }
 `;
@@ -57,7 +57,7 @@ export const Name = styled.h1`
   margin-top: 12px;
   margin-bottom: 35px;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
     font-size: 22px;
     letter-spacing: 1.1px;
     margin-top: 8px;
@@ -75,7 +75,7 @@ export const AboutMe = styled.p`
   margin-top: 0;
   margin-bottom: 0;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
     font-size: 17px;
     letter-spacing: 0.85px;
   }

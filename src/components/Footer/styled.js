@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   margin-top: 120px;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
     margin-top: 48px;
   }
 `;
@@ -30,7 +30,7 @@ export const Info = styled.p`
   margin: 0;
   margin-top: 24px;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
     font-size: 14px;
     line-height: normal;
     letter-spacing: 0.7px;
@@ -43,7 +43,7 @@ export const Icons = styled.div`
   grid-gap: 24px;
   margin: 56px 0 32px 0;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
     grid-gap: 16px;
     margin: 40px 0 16px 0;
   }

@@ -11,7 +11,7 @@ export const TileButton = styled.button`
   text-align: left;
   transition: border 0.4s ease;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
     padding: 24px;
   }
 
@@ -29,7 +29,7 @@ export const Title = styled.h3`
   letter-spacing: 1.2px;
   margin: 0;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
     font-size: 16px;
     letter-spacing: 0.8px;
   }
@@ -44,7 +44,7 @@ export const Description = styled.p`
   letter-spacing: 0.9px;
   margin: 24px 0;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
     font-size: 14px;
     line-height: normal;
     letter-spacing: 0.7px;
@@ -59,7 +59,7 @@ export const Links = styled.div`
   line-height: 140%;
   letter-spacing: 0.9px;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
     font-size: 14px;
     line-height: normal;
     letter-spacing: 0.7px;

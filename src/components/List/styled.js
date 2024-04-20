@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
   box-shadow: 0px 16px 58px 0px rgba(9, 10, 51, 0.03),
     0px -2px 50px 0px rgba(9, 10, 51, 0.02);
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
     padding: 16px;
     margin-top: 50px;
   }
@@ -20,7 +20,7 @@ export const HeaderTitle = styled.div`
   grid-gap: 16px;
   border-bottom: 1px solid ${({ theme }) => theme.colors.border.listHeaderTitle};
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
     grid-gap: 12px;
     align-items: baseline;
   }
@@ -36,7 +36,7 @@ export const Title = styled.h2`
   margin: 0;
   margin-bottom: 18px;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
     margin-bottom: 12px;
     font-size: 18px;
     letter-spacing: 0.9px;
@@ -48,7 +48,7 @@ export const Icon = styled.div`
   height: 32px;
   margin-top: 6px;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
     width: 18px;
     height: 21px;
   }
@@ -68,7 +68,7 @@ export const StyledList = styled.ul`
   margin-top: 32px;
   list-style-type: none;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
     margin-top: 12px;
     grid-template-columns: 1fr;
     font-size: 14px;

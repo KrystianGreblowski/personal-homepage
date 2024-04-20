@@ -14,7 +14,7 @@ export const Button = styled.a`
   margin-bottom: 83px;
   transition: box-shadow 0.3s ease;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
     margin-top: 24px;
     margin-bottom: 0;
     grid-gap: 12px;
@@ -35,7 +35,7 @@ export const StyledButtonIcon = styled.div`
   width: 25px;
   height: 25px;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
     width: 20px;
     height: 20px;
   }
@@ -49,7 +49,7 @@ export const ButtonText = styled.div`
   line-height: normal;
   letter-spacing: 1.003px;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
     font-size: 18px;
     letter-spacing: 0.9px;
   }

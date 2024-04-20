@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 export const Wrapper = styled.div`
   margin-top: 72px;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
     margin-top: 48px;
   }
 `;
@@ -18,7 +18,7 @@ export const StyledGitHubIcon = styled.div`
   width: 40px;
   height: 40px;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
     width: 32px;
     height: 32px;
   }
@@ -34,7 +34,7 @@ export const Title = styled.h2`
   margin-top: 12px;
   margin-bottom: 0;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
     font-size: 18px;
     letter-spacing: 0.9px;
   }
@@ -50,7 +50,7 @@ export const Description = styled.p`
   margin-top: 8px;
   margin-bottom: 0;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
     margin-top: 16px;
     font-size: 17px;
     letter-spacing: 0.85px;
@@ -63,7 +63,7 @@ export const Body = styled.div`
   grid-template-columns: 1fr 1fr;
   grid-gap: 32px;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
     grid-template-columns: 1fr;
     grid-gap: 16px;
   }

@@ -10,7 +10,7 @@ export const Mail = styled.a`
   text-decoration: none;
   transition: color 0.3s ease;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
     font-size: 18px;
     letter-spacing: 0.9px;
     margin: 12px 0;

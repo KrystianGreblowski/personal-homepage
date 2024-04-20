@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
   justify-items: center;
   margin: 64px 0 20px 0;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
     margin: 24px 0 20px 0;
   }
 `;
@@ -22,7 +22,7 @@ export const Text = styled.p`
   margin: 0;
   margin-bottom: 48px;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
     font-size: 14px;
     line-height: normal;
     letter-spacing: 0.7px;
@@ -44,7 +44,7 @@ export const LoadingAnimation = styled(Spinner)`
   width: 160px;
   height: 160px;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
     width: 40px;
     height: 40px;
   }

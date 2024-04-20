@@ -15,7 +15,7 @@ export const Button = styled.a`
   margin-top: 32px;
   transition: box-shadow 0.3s ease;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
     font-size: 18px;
     letter-spacing: 0.9px;
     margin-top: 24px;
