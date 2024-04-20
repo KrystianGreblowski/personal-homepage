@@ -10,9 +10,20 @@ export const TileButton = styled.button`
     0px -2px 50px 0px rgba(9, 10, 51, 0.02);
   text-align: left;
   transition: border 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.extraLarge}px) {
+    padding: 32px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.large}px) {
+    padding: 24px;
+  }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
-    padding: 24px;
+    padding: 16px;
   }
 
   &:hover {
@@ -29,9 +40,13 @@ export const Title = styled.h3`
   letter-spacing: 1.2px;
   margin: 0;
 
+  @media (max-width: ${({ theme }) => theme.breakpoints.large}px) {
+    font-size: 20px;
+    letter-spacing: 0.8px;
+  }
+
   @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
     font-size: 16px;
-    letter-spacing: 0.8px;
   }
 `;
 
@@ -44,11 +59,15 @@ export const Description = styled.p`
   letter-spacing: 0.9px;
   margin: 24px 0;
 
+  @media (max-width: ${({ theme }) => theme.breakpoints.large}px) {
+    font-size: 16px;
+    margin: 16px 0;
+  }
+
   @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
     font-size: 14px;
     line-height: normal;
     letter-spacing: 0.7px;
-    margin: 16px 0;
   }
 `;
 
@@ -59,10 +78,14 @@ export const Links = styled.div`
   line-height: 140%;
   letter-spacing: 0.9px;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
-    font-size: 14px;
+  @media (max-width: ${({ theme }) => theme.breakpoints.large}px) {
+    font-size: 16px;
     line-height: normal;
     letter-spacing: 0.7px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
+    font-size: 14px;
   }
 `;
 
@@ -71,11 +94,27 @@ export const Demo = styled.div`
   grid-template-columns: auto 1fr;
   grid-gap: 8px;
   margin-bottom: 8px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.large}px) {
+    grid-gap: 6px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
+    grid-gap: 4px;
+  }
 `;
 
 export const Code = styled(Demo)`
   grid-gap: 13px;
   margin-bottom: 0;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.large}px) {
+    grid-gap: 11px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
+    grid-gap: 7px;
+  }
 `;
 
 export const LinkTitle = styled.span`
