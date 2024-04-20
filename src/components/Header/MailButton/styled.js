@@ -2,22 +2,28 @@ import styled from "styled-components";
 
 export const Button = styled.a`
   display: grid;
-  grid-template-columns: auto auto;
-  max-width: 161px;
-  grid-gap: 16px;
+  grid-template-columns: auto 1fr;
+  max-width: 168px;
+  grid-gap: 12px;
   padding: 12px 16px;
   text-decoration: none;
   border-radius: 4px;
   border: 1px solid rgba(209, 213, 218, 0.3);
   background-color: ${({ theme }) => theme.colors.background.mailButton};
   margin-top: 32px;
-  margin-bottom: 83px;
   transition: box-shadow 0.3s ease;
 
+  @media (max-width: ${({ theme }) => theme.breakpoints.large}px) {
+    max-width: 118px;
+    margin-top: 16px;
+    padding: 6px 10px;
+    grid-gap: 6px;
+  }
+
   @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
-    margin-top: 24px;
-    margin-bottom: 0;
-    grid-gap: 12px;
+    max-width: 102px;
+    margin-top: 12px;
+    grid-gap: 4px;
   }
 
   &:hover {
@@ -35,9 +41,14 @@ export const StyledButtonIcon = styled.div`
   width: 25px;
   height: 25px;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.large}px) {
     width: 20px;
     height: 20px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
+    width: 16px;
+    height: 16px;
   }
 `;
 
@@ -48,9 +59,15 @@ export const ButtonText = styled.div`
   font-weight: 600;
   line-height: normal;
   letter-spacing: 1.003px;
+  align-self: center;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.large}px) {
+    font-size: 16px;
+    letter-spacing: 0.9px;
+  }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
-    font-size: 18px;
+    font-size: 14px;
     letter-spacing: 0.9px;
   }
 `;
