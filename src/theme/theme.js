@@ -53,7 +53,11 @@ export const lightTheme = {
     },
   },
   breakpoints: {
-    mobileMax: 767,
+    extraLarge: 1280,
+    large: 1024,
+    medium: 768,
+    small: 640,
+    extraSmall: 480,
   },
 };
 
@@ -103,6 +107,10 @@ export const darkTheme = {
     },
   },
   breakpoints: {
-    mobileMax: 767,
+    extraLarge: 1280,
+    large: 1024,
+    medium: 768,
+    small: 640,
+    extraSmall: 480,
   },
 };
