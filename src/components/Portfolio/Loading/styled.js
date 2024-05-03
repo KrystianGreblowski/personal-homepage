@@ -23,10 +23,18 @@ export const Text = styled.p`
   margin-bottom: 48px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
     font-size: 14px;
     line-height: normal;
     letter-spacing: 0.7px;
     margin-bottom: 32px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.extraSmall}px) {
+    font-size: 12px;
   }
 `;
 
@@ -43,6 +51,11 @@ export const LoadingAnimation = styled(Spinner)`
   animation: ${rotate} 1s linear infinite;
   width: 160px;
   height: 160px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.large}px) {
+    width: 100px;
+    height: 100px;
+  }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
     width: 40px;

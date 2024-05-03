@@ -10,6 +10,10 @@ export const Wrapper = styled.div`
   @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
     margin-top: 32px;
   }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.extraSmall}px) {
+    margin-top: 24px;
+  }
 `;
 
 export const Header = styled.div`

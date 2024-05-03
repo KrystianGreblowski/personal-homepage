@@ -4,18 +4,23 @@ export const Wrapper = styled.div`
   padding: 32px;
   margin: auto;
   margin-top: 64px;
+  border-radius: 4px;
   background-color: ${({ theme }) => theme.colors.background.listWrapper};
   box-shadow: 0px 16px 58px 0px rgba(9, 10, 51, 0.03),
     0px -2px 50px 0px rgba(9, 10, 51, 0.02);
 
   @media (max-width: ${({ theme }) => theme.breakpoints.large}px) {
-    margin-top: 32px;
+    margin-top: 48px;
     padding: 24px;
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
-    margin-top: 24px;
+    margin-top: 32px;
     padding: 16px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.extraSmall}px) {
+    margin-top: 24px;
   }
 `;
 

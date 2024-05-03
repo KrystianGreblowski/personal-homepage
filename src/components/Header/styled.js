@@ -68,6 +68,10 @@ export const Caption = styled.p`
   margin: 0;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.large}px) {
+    font-size: 11px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
     font-size: 10px;
   }
 `;
