@@ -10,10 +10,18 @@ export const Mail = styled.a`
   text-decoration: none;
   transition: color 0.3s ease;
 
+  @media (max-width: ${({ theme }) => theme.breakpoints.large}px) {
+    font-size: 30px;
+  }
+
   @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
     font-size: 18px;
     letter-spacing: 0.9px;
     margin: 12px 0;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.extraSmall}px) {
+    font-size: 16px;
   }
 
   &:hover {
