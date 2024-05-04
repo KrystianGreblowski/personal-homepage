@@ -4,6 +4,7 @@ export const Wrapper = styled.div`
   display: grid;
   grid-template-columns: auto 1fr;
   grid-gap: 64px;
+  margin-top: -26px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.large}px) {
     grid-gap: 32px;

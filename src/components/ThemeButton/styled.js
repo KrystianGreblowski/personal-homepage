@@ -10,9 +10,10 @@ export const Wrapper = styled.div`
 
   @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
     grid-gap: 10px;
+    margin-top: 24px;
   }
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.extraSmall}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.small}px) {
     grid-template-columns: 1fr;
     justify-items: right;
     margin-top: 16px;
@@ -34,7 +35,7 @@ export const Text = styled.p`
     font-size: 11px;
   }
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.extraSmall}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.small}px) {
     display: none;
   }
 `;
