@@ -6,11 +6,11 @@ export const Wrapper = styled.div`
   grid-template-columns: 1fr auto;
   grid-gap: 12px;
   align-items: center;
-  margin-top: 32px;
+  margin-top: 38px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
     grid-gap: 10px;
-    margin-top: 24px;
+    margin-top: 32px;
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.small}px) {
