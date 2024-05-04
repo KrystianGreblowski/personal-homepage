@@ -1,7 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { toggleTheme, isDarkTheme } from "../../theme/themeSlice";
-import ToggleAnimation from "./ToggleAnimation";
-import { Wrapper, Text, Button } from "./styled";
+import { Wrapper, Text, Button, ToggleCircle, ToggleIcon } from "./styled";
 
 const ThemeButton = () => {
   const darkTheme = useSelector(isDarkTheme);
@@ -16,7 +15,9 @@ const ThemeButton = () => {
       <Text>Dark mode {darkTheme ? "on" : "off"}</Text>
 
       <Button onClick={toggleThemeHandler}>
-        <ToggleAnimation />
+        <ToggleCircle $darkTheme={darkTheme}>
+          <ToggleIcon />
+        </ToggleCircle>
       </Button>
     </Wrapper>
   );

@@ -2,6 +2,8 @@ const color = {
   white: "#FFFFFF",
   whiteLilac: "#FBFBFE",
   slateGray: "#6E7E91",
+  gray: "#838080",
+  mercury: "#E5E5E5",
   dodgerBlue: "#2188FF",
   scienceBlue: "#0366D6",
   mineShaft: "#252525",
@@ -16,6 +18,8 @@ export const lightTheme = {
       repoTile: color.white,
       errorButton: color.scienceBlue,
       footerMailButton: color.whiteLilac,
+      themeButton: color.mercury,
+      toggleCircle: color.slateGray,
     },
     font: {
       headerCaption: color.slateGray,
@@ -45,11 +49,13 @@ export const lightTheme = {
       listHeaderTitle: "rgba(209, 213, 218, 0.3)",
       repoTile: "rgba(3, 102, 214, 0.2)",
       directLink: color.scienceBlue,
+      themeButton: color.slateGray,
     },
     fill: {
       portfolioIcon: color.scienceBlue,
       footerIcon: color.mineShaft,
       footerIconHover: color.scienceBlue,
+      toggleIcon: color.white,
     },
   },
   breakpoints: {
@@ -70,6 +76,8 @@ export const darkTheme = {
       repoTile: "rgba(54, 54, 54, 0.72)",
       errorButton: color.dodgerBlue,
       footerMailButton: color.mineShaft,
+      themeButton: color.gray,
+      toggleCircle: color.white,
     },
     font: {
       headerCaption: color.white,
@@ -99,11 +107,13 @@ export const darkTheme = {
       listHeaderTitle: "rgba(209, 213, 218, 0.1)",
       repoTile: "rgba(3, 102, 214, 0.5)",
       directLink: color.dodgerBlue,
+      themeButton: color.white,
     },
     fill: {
       portfolioIcon: color.dodgerBlue,
       footerIcon: color.white,
       footerIconHover: color.dodgerBlue,
+      toggleIcon: color.mineShaft,
     },
   },
   breakpoints: {
