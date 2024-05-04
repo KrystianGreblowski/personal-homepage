@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import { ReactComponent as Spinner } from "./spinner.svg";
+import { ReactComponent as Spinner } from "../../../images/spinner.svg";
 
 export const Wrapper = styled.div`
   display: grid;
