@@ -93,12 +93,7 @@ export const Body = styled.div`
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.small}px) {
-    grid-gap: 8px;
     grid-template-columns: 1fr;
-  }
-
-  @media (max-width: ${({ theme }) => theme.breakpoints.extraSmall}px) {
-    grid-gap: 4px;
   }
 
   ${({ $loading, $error }) =>
