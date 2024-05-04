@@ -24,10 +24,11 @@ export const TileButton = styled.button`
 
   @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
     padding: 16px;
+    border-width: 4px;
   }
 
   &:hover {
-    border: 6px solid ${({ theme }) => theme.colors.border.repoTile};
+    border-color: ${({ theme }) => theme.colors.border.repoTile};
   }
 `;
 
