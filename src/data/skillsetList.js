@@ -4,6 +4,7 @@ export const skillsetList = [
   "React",
   "React Router",
   "React Hooks",
+  "Styled-components",
   "Error handling",
   "Redux (Toolkit)",
   "Redux-Saga",
