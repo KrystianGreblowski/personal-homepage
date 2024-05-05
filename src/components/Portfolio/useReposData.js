@@ -18,12 +18,12 @@ export const useReposData = () => {
     const loadingDelay = 1000;
 
     const fetchRepos = async () => {
+      const API_URL = "https://api.github.com/users/KrystianGreblowski/repos";
+
       try {
         await new Promise((resolve) => setTimeout(resolve, loadingDelay));
 
-        const response = await axios.get(
-          "https://api.github.com/users/KrystianGreblowski/repos"
-        );
+        const response = await axios.get(API_URL);
 
         if (response.status !== 200) {
           throw new Error(response.statusText);
