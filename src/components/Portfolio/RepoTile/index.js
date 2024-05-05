@@ -26,6 +26,7 @@ const RepoTile = ({ title, description, demoLink, codeLink }) => {
             </DirectLink>
           </Demo>
         )}
+
         {codeLink && (
           <Code>
             <LinkTitle>Code:</LinkTitle>
