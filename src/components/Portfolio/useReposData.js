@@ -15,11 +15,10 @@ export const useReposData = () => {
   const [reposState, setReposState] = useState("loading");
 
   useEffect(() => {
+    const API_URL = "https://api.github.com/users/KrystianGreblowski/repos";
     const loadingDelay = 1000;
 
     const fetchRepos = async () => {
-      const API_URL = "https://api.github.com/users/KrystianGreblowski/repos";
-
       try {
         await new Promise((resolve) => setTimeout(resolve, loadingDelay));
 
