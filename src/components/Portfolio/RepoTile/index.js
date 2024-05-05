@@ -17,21 +17,24 @@ const RepoTile = ({ title, description, demoLink, codeLink }) => {
       <Description>{description}</Description>
 
       <Links>
-        <Demo>
-          <LinkTitle>Demo:</LinkTitle>
+        {demoLink && (
+          <Demo>
+            <LinkTitle>Demo:</LinkTitle>
 
-          <DirectLink href={demoLink} target="_blank">
-            {demoLink}
-          </DirectLink>
-        </Demo>
+            <DirectLink href={demoLink} target="_blank">
+              {demoLink}
+            </DirectLink>
+          </Demo>
+        )}
+        {codeLink && (
+          <Code>
+            <LinkTitle>Code:</LinkTitle>
 
-        <Code>
-          <LinkTitle>Code:</LinkTitle>
-
-          <DirectLink href={codeLink} target="_blank">
-            {codeLink}
-          </DirectLink>
-        </Code>
+            <DirectLink href={codeLink} target="_blank">
+              {codeLink}
+            </DirectLink>
+          </Code>
+        )}
       </Links>
     </TileButton>
   );
