@@ -1,6 +1,7 @@
 import { Wrapper, Caption, Info, Icons } from "./styled";
 import { ReactComponent as GitHubIcon } from "../../images/github-black.svg";
 import { ReactComponent as FacebookIcon } from "../../images/facebook-black.svg";
+import { ReactComponent as LinkedInIcon } from "../../images/linkedin-black.svg";
 import MailButton from "./MailButton";
 import IconButton from "./IconButton";
 
@@ -26,6 +27,11 @@ const Footer = () => {
         <IconButton
           icon={<FacebookIcon />}
           url="https://www.facebook.com/profile.php?id=100000060031788"
+        />
+
+        <IconButton
+          icon={<LinkedInIcon />}
+          url="https://www.linkedin.com/in/krystian-greblowski-2a8449308/"
         />
       </Icons>
     </Wrapper>

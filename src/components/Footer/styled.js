@@ -71,7 +71,7 @@ export const Info = styled.p`
 
 export const Icons = styled.div`
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: auto auto 1fr;
   grid-gap: 24px;
   margin: 48px 0 32px 0;
 
