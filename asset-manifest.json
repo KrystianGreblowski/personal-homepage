@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/personal-homepage/static/js/main.b62d06e9.js",
+    "main.js": "/personal-homepage/static/js/main.950f1e9f.js",
     "static/media/photoOfMe.png": "/personal-homepage/static/media/photoOfMe.ba59a457823c9ac00f70.png",
     "static/media/rocket.svg": "/personal-homepage/static/media/rocket.df69c62a6cf37e47fcee6c6e44697649.svg",
     "static/media/tools.svg": "/personal-homepage/static/media/tools.8c2789a9d52d8b11faae466264107941.svg",
@@ -10,12 +10,13 @@
     "index.html": "/personal-homepage/index.html",
     "static/media/error.svg": "/personal-homepage/static/media/error.e3d5a53b0e00a028db57415879e31c5c.svg",
     "static/media/errorDM.svg": "/personal-homepage/static/media/errorDM.c74989fdb0bdc1cec8072646aef7cdea.svg",
+    "static/media/linkedin-black.svg": "/personal-homepage/static/media/linkedin-black.3c17bf4886e613c0a6d159d92613326c.svg",
     "static/media/message.svg": "/personal-homepage/static/media/message.d04ae5352cae02300a416bb14be47609.svg",
     "static/media/facebook-black.svg": "/personal-homepage/static/media/facebook-black.fa453e160d048398cc5e4b8ef4862bb9.svg",
     "static/media/spinner.svg": "/personal-homepage/static/media/spinner.f0cf9f6aef365567ad9b9a0d34b8b760.svg",
-    "main.b62d06e9.js.map": "/personal-homepage/static/js/main.b62d06e9.js.map"
+    "main.950f1e9f.js.map": "/personal-homepage/static/js/main.950f1e9f.js.map"
   },
   "entrypoints": [
-    "static/js/main.b62d06e9.js"
+    "static/js/main.950f1e9f.js"
   ]
 }
