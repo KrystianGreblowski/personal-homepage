@@ -20,5 +20,4 @@ export const skillsetList = [
   "Trello",
   "Scrum",
   "Markdown",
-  "Git",
 ];
