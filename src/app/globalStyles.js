@@ -14,6 +14,7 @@ export const GlobalStyles = createGlobalStyle`
       background-color: ${({ theme }) => theme.colors.background.body};
       font-family: 'Inter', sans-serif;
       word-break: break-word;
+      overflow-y: scroll;
       max-width: 1248px;
       margin: auto;
       padding: 0 16px;
