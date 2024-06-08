@@ -73,18 +73,18 @@ export const Icons = styled.div`
   display: grid;
   grid-template-columns: auto auto 1fr;
   grid-gap: 24px;
-  margin: 48px 0 32px 0;
+  margin: 48px 0;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.large}px) {
-    margin: 32px 0 16px 0;
+    margin: 32px 0;
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
     grid-gap: 16px;
-    margin: 24px 0 16px 0;
+    margin: 24px 0;
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.extraSmall}px) {
-    margin: 16px 0 8px 0;
+    margin: 16px 0;
   }
 `;
