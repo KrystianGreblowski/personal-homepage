@@ -16,7 +16,6 @@ export const GlobalStyles = createGlobalStyle`
       word-break: break-word;
       max-width: 1248px;
       margin: auto;
-      padding: 16px;
-      padding-top: 0;
+      padding: 0 16px;
   }
 `;
