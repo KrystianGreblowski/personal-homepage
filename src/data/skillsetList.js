@@ -1,9 +1,11 @@
 export const skillsetList = [
+  "TypeScript",
   "JavaScript ES6+",
   "Semantic & accessible HTML",
   "React",
   "React Router",
   "React Hooks",
+  "TanStack Query",
   "Styled-components",
   "Error handling",
   "Redux (Toolkit)",
