@@ -6,7 +6,9 @@ const compareDates = (firstDate, secondDate) => {
 };
 
 export const sortRepos = (repos) => {
-  const reposSorted = repos.slice().sort(compareDates);
+  const filteredRepos = repos.filter((repo) => repo.demoLink !== "");
+
+  const reposSorted = filteredRepos.slice().sort(compareDates);
 
   return reposSorted;
 };
