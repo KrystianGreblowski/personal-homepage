@@ -1,7 +1,1 @@
-export const learningList = [
-  "Node.js",
-  "Cypress",
-  "Unit testing",
-  "React Context",
-  "JS classes",
-];
+export const learningList = ["Next.js", "React Native", "Node.js", "Cypress"];
